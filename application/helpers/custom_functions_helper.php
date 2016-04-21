@@ -93,6 +93,15 @@
 		writelog($filename, $record, 'ab');
 	}
 
+	function noticelog($string)
+	{
+		$f = date("Ymd");
+		$filename = BASEDIRS . 'data/logs/calllog/notice' . $f . '.log';
+		$logtime = date('Y/m/d H:i:s');
+		$record = $logtime.' - '.$string . "\n";
+		writelog($filename, $record, 'ab');
+	}
+
 	function writelog($filename, $data, $method = 'wb+', $iflock = 1, $check = 1, $chmod = 1)
 	{
 		if (empty($filename))
@@ -246,4 +255,20 @@
 			$randomData = mt_rand() . mt_rand() . mt_rand() . mt_rand() . microtime(true) . uniqid(mt_rand(), true);
 		}
 		return substr(hash('sha512', $randomData), 0, $tokenLen);
+	}
+
+	function enrsa($keypath,$text)  //2048位 私钥加密
+	{
+		include_once BASEDIRS . 'application/libraries/Rsalib.php';
+		$rsa = new Rsalib(2048);
+		$rsa->setupPrivKey($keypath);
+		return $rsa->privEncrypt($text);	
+	}
+
+	function dersa($keypath,$text)  //2048位 公钥解密
+	{
+		include_once BASEDIRS . 'application/libraries/Rsalib.php';
+		$rsa = new Rsalib(2048);
+		$rsa->setupPubKey($keypath);
+		return $rsa->pubDecrypt($text);	
 	}

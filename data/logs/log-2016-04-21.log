@@ -1,0 +1,239 @@
+DEBUG - 2016-04-21 11:17:05 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:17:05 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:17:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:17:05 --> Total execution time: 0.0135
+DEBUG - 2016-04-21 11:18:46 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:18:46 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:18:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:20:57 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:20:57 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:20:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:20:57 --> Severity: Warning --> mkdir(): Invalid path /data/wwwroot/qywebchat.skylinematrix.com/system/libraries/Session/drivers/Session_files_driver.php 117
+ERROR - 2016-04-21 11:20:57 --> Severity: error --> Exception: Session: Configured save path '' is not a directory, doesn't exist or cannot be created. /data/wwwroot/qywebchat.skylinematrix.com/system/libraries/Session/drivers/Session_files_driver.php 119
+ERROR - 2016-04-21 11:20:57 --> Severity: Warning --> fopen(b24a77a751f89f3dcb3fcedbb792b49d6136ae83): failed to open stream: Permission denied /data/wwwroot/qywebchat.skylinematrix.com/system/libraries/Session/drivers/Session_files_driver.php 156
+ERROR - 2016-04-21 11:20:57 --> Session: File 'b24a77a751f89f3dcb3fcedbb792b49d6136ae83' doesn't exist and cannot be created.
+ERROR - 2016-04-21 11:20:57 --> Severity: Warning --> Unknown: Failed to write session data (user). Please verify that the current setting of session.save_path is correct () Unknown 0
+DEBUG - 2016-04-21 11:21:49 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:21:49 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:21:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:22:28 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:22:28 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:22:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:22:28 --> Unable to load the requested class: Cismarty
+DEBUG - 2016-04-21 11:30:13 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:30:13 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:30:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:30:13 --> Severity: Warning --> require_once(/data/wwwroot/qywebchat.skylinematrix.com/application/third_party/smarty-3.1.29): failed to open stream: No such file or directory /data/wwwroot/qywebchat.skylinematrix.com/application/libraries/Cismarty.php 12
+ERROR - 2016-04-21 11:30:13 --> Severity: Compile Error --> require_once(): Failed opening required '/data/wwwroot/qywebchat.skylinematrix.com/application/third_party/smarty-3.1.29/' (include_path='.:/usr/local/php/lib/php') /data/wwwroot/qywebchat.skylinematrix.com/application/libraries/Cismarty.php 12
+DEBUG - 2016-04-21 11:31:19 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:31:19 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:31:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:31:19 --> Total execution time: 0.0203
+DEBUG - 2016-04-21 11:32:45 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:32:45 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:32:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:32:45 --> Total execution time: 0.0222
+DEBUG - 2016-04-21 11:33:41 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:33:41 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:33:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:33:41 --> Total execution time: 0.0204
+DEBUG - 2016-04-21 11:35:03 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:35:03 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:35:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:35:03 --> Total execution time: 0.0331
+DEBUG - 2016-04-21 11:35:07 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:35:07 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:35:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:35:07 --> Total execution time: 0.0244
+DEBUG - 2016-04-21 11:35:26 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:35:26 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:35:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:35:26 --> Total execution time: 0.0225
+DEBUG - 2016-04-21 11:36:14 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:36:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:36:14 --> 404 Page Not Found: User_guide/index
+DEBUG - 2016-04-21 11:36:14 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:36:14 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:36:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:36:14 --> Total execution time: 0.0264
+DEBUG - 2016-04-21 11:36:14 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:36:14 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:36:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:36:14 --> Total execution time: 0.0225
+DEBUG - 2016-04-21 11:36:16 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:36:16 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:36:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:36:16 --> Total execution time: 0.0222
+DEBUG - 2016-04-21 11:36:31 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:36:31 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:36:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:36:31 --> Total execution time: 0.0225
+DEBUG - 2016-04-21 11:37:21 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:21 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:21 --> Total execution time: 0.0214
+DEBUG - 2016-04-21 11:37:31 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:31 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:31 --> Total execution time: 0.0219
+DEBUG - 2016-04-21 11:37:47 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:47 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:47 --> Total execution time: 0.0231
+DEBUG - 2016-04-21 11:37:48 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:48 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:48 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:48 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:48 --> Total execution time: 0.0226
+DEBUG - 2016-04-21 11:37:48 --> Total execution time: 0.0239
+DEBUG - 2016-04-21 11:37:49 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:49 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:37:49 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:37:54 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:54 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:37:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:37:54 --> Total execution time: 0.0238
+DEBUG - 2016-04-21 11:37:55 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:37:55 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:37:55 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:38:44 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:38:44 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:38:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:38:44 --> Total execution time: 0.0257
+DEBUG - 2016-04-21 11:38:45 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:38:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:38:45 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:44:27 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:44:27 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:44:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:44:27 --> Total execution time: 0.0216
+DEBUG - 2016-04-21 11:44:27 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:44:27 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:44:27 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:45:39 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:45:39 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:45:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:45:39 --> Total execution time: 0.0225
+DEBUG - 2016-04-21 11:45:40 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:45:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:45:40 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:46:04 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:04 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:46:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:46:04 --> Total execution time: 0.0327
+DEBUG - 2016-04-21 11:46:05 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:46:05 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:46:06 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:06 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:46:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:46:06 --> Total execution time: 0.0226
+DEBUG - 2016-04-21 11:46:07 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:46:07 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:46:10 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:46:10 --> 404 Page Not Found: User_guide/index
+DEBUG - 2016-04-21 11:46:10 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:10 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:46:10 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:46:10 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:46:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:46:10 --> Total execution time: 0.0214
+DEBUG - 2016-04-21 11:46:10 --> Total execution time: 0.0232
+DEBUG - 2016-04-21 11:46:11 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:46:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:46:11 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:47:04 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:47:04 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:47:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:47:04 --> Total execution time: 0.0227
+DEBUG - 2016-04-21 11:47:05 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:47:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:47:05 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:49:04 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:04 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:49:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:49:04 --> Total execution time: 0.0246
+DEBUG - 2016-04-21 11:49:04 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:49:04 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:49:09 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:09 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:49:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:49:09 --> Total execution time: 0.0226
+DEBUG - 2016-04-21 11:49:10 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:49:10 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:49:30 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:30 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:49:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:49:30 --> Total execution time: 0.0230
+DEBUG - 2016-04-21 11:49:30 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:49:30 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:49:52 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:52 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:49:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:49:52 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:49:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:49:52 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:50:13 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:13 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:13 --> Total execution time: 0.0257
+DEBUG - 2016-04-21 11:50:13 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:13 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:50:29 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:29 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:29 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:29 --> 404 Page Not Found: Login/index
+DEBUG - 2016-04-21 11:50:29 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:29 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:29 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:29 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:30 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:30 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:50:38 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:38 --> 404 Page Not Found: Login/index
+DEBUG - 2016-04-21 11:50:38 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:38 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:50:44 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:44 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:44 --> Total execution time: 0.0226
+DEBUG - 2016-04-21 11:50:45 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:45 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:50:47 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:47 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:50:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:50:47 --> Total execution time: 0.0247
+DEBUG - 2016-04-21 11:50:48 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:50:48 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:50:48 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:51:51 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:51:51 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:51:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:51:51 --> Total execution time: 0.0281
+DEBUG - 2016-04-21 11:51:51 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:51:51 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:51:51 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2016-04-21 11:52:00 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:52:00 --> No URI present. Default controller set.
+DEBUG - 2016-04-21 11:52:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2016-04-21 11:52:00 --> Total execution time: 0.0249
+DEBUG - 2016-04-21 11:52:01 --> UTF-8 Support Enabled
+DEBUG - 2016-04-21 11:52:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2016-04-21 11:52:01 --> 404 Page Not Found: Faviconico/index

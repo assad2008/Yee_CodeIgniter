@@ -1,46 +1,60 @@
 <?php
 /**
 * @file config.php
-* @synopsis  基础配置文件
+* @synopsis  配置文件
 * @author Yee, <rlk002@gmail.com>
 * @version 1.0
-* @date 2015-11-26 18:33:17
+* @date 2016-04-21 11:09:44
 */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-$config['base_url'] = '';
+$config['base_url'] = 'https://qywebchat.skylinematrix.com/';
 $config['index_page'] = 'index.php';
 $config['uri_protocol']	= 'REQUEST_URI';
 $config['url_suffix'] = '';
+
 $config['language']	= 'english';
 $config['charset'] = 'UTF-8';
+
 $config['enable_hooks'] = FALSE;
+
 $config['subclass_prefix'] = 'MY_';
+
 $config['composer_autoload'] = FALSE;
+
 $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+
 $config['allow_get_array'] = TRUE;
 $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
 
-$config['log_threshold'] = 1;
-$config['log_path'] = DATAPATH . 'log/';
+/*
+|	0 = Disables logging, Error logging TURNED OFF
+|	1 = Error Messages (including PHP errors)
+|	2 = Debug Messages
+|	3 = Informational Messages
+|	4 = All Messages
+*/
+$config['log_threshold'] = 2;
+$config['log_path'] = FCPATH . 'data/logs/';
 $config['log_file_extension'] = '.log';
 $config['log_file_permissions'] = 0644;
 $config['log_date_format'] = 'Y-m-d H:i:s';
+
 $config['error_views_path'] = '';
 
-$config['cache_path'] = DATAPATH . 'cache/';
-
+$config['cache_path'] = FCPATH . 'data/cache/';
 $config['cache_query_string'] = FALSE;
-$config['encryption_key'] = 'U2FsdGVkX18ztHrs0mQ1ugLegFKchOpGoWxRbrxB70ZVZLs=';
+
+$config['encryption_key'] = 'djfoij&*^&(*)(*';
+
 
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'js_session';
+$config['sess_cookie_name'] = 'JSESSION';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = DATAPATH . 'sess/';
+$config['sess_save_path'] = FCPATH . 'data/session/';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -62,6 +76,9 @@ $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
 
 $config['compress_output'] = FALSE;
+
 $config['time_reference'] = 'local';
+
 $config['rewrite_short_tags'] = FALSE;
+
 $config['proxy_ips'] = '';

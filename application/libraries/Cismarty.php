@@ -1,38 +1,29 @@
-<?php
+<?php  
 /**
-* @file Cismarty.php
-* @synopsis  支持Smarty
+* @file Smarty.php
+* @synopsis  Smarty libraries
 * @author Yee, <rlk002@gmail.com>
 * @version 1.0
-* @date 2015-11-26 21:51:57
+* @date 2013-01-17 14:18:36
 */
 
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once APPPATH."third_party/Smarty/Smarty.class.php";
+require_once( APPPATH .'third_party/smarty-3.1.29/libs/Smarty.class.php' );
 
-class Cismarty extends Smarty 
+class CiSmarty extends Smarty 
 {
 	function __construct()
 	{
 		parent::__construct();
-		$CI = get_instance();
-		$CI->load->config('smarty');
-		$this->debugging = $CI->config->item('smarty.smarty_debug');
-		$this->setTemplateDir($CI->config->item('smarty.template_path'));
-		$this->setCompileDir($CI->config->item('smarty.compile_directory'));
-		$this->setCacheDir($CI->config->item('smarty.cache_directory'));
-		$this->setLeftDelimiter($CI->config->item('smarty.left_delimiter'));
-		$this->setRightDelimiter($CI->config->item('smarty.right_delimiter'));
-		$this->cache_lifetime = $CI->config->item('smarty.cache_lifetime');
-		$this->disableSecurity();
+		$this->compile_dir = APPPATH . "views/templates_c";
+		$this->template_dir = APPPATH . "views/templates";
+		$this->cache_dir = APPPATH . "views/cache";
+		$this->left_delimiter = '<{';
+		$this->right_delimiter = '}>';
+		$this->caching = false;
+		$this->compile_check = true;
 		self::config($this);
-		if ( method_exists( $this, 'assignByRef') )
-		{
-			$ci =& get_instance();
-			$this->assignByRef("ci", $ci);
-		}
-		log_message('debug', "Smarty Class Initialized");
 	}
 
 	public static function config($s)
@@ -43,5 +34,24 @@ class Cismarty extends Smarty
 		$s->assign('date_format_yymd_hm', '%y-%m-%d %H:%M');
 		$s->assign('date_format_ymd', '%Y-%m-%d');
 		$s->assign('date_format_ym', '%Y-%m');	
+	}
+
+	public function view($template, $data = array(), $return = FALSE)
+	{
+		foreach ($data as $key => $val)
+		{
+			$this->assign($key, $val);
+		}
+		
+		if ($return == FALSE)
+		{
+			$CI =& get_instance();
+			$CI->output->final_output = $this->fetch($template);
+			return;
+		}
+		else
+		{
+			return $this->fetch($template);
+		}
 	}
 }

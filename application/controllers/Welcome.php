@@ -1,15 +1,15 @@
 <?php
 /**
 * @file Welcome.php
-* @synopsis  首页
+* @synopsis  默认路由
 * @author Yee, <rlk002@gmail.com>
 * @version 1.0
-* @date 2015-11-26 18:02:31
+* @date 2016-04-21 11:18:01
 */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class Welcome extends Unlogin_Controller
 {
 	function __construct()
 	{
@@ -18,7 +18,6 @@ class Welcome extends Application
 
 	public function index()
 	{
-		$this->cismarty->assign("time",time());
-		$this->cismarty->display('welcome.tpl');
+		$this->smarty->display('welcome.html');
 	}
 }
