@@ -119,7 +119,7 @@ if ( ! function_exists('hash_pbkdf2'))
 	 */
 	function hash_pbkdf2($algo, $password, $salt, $iterations, $length = 0, $raw_output = FALSE)
 	{
-		if ( ! in_array($algo, hash_algos(), TRUE))
+		if ( ! in_array(strtolower($algo), hash_algos(), TRUE))
 		{
 			trigger_error('hash_pbkdf2(): Unknown hashing algorithm: '.$algo, E_USER_WARNING);
 			return FALSE;
@@ -203,8 +203,6 @@ if ( ! function_exists('hash_pbkdf2'))
 			'ripemd160' => 64,
 			'ripemd256' => 64,
 			'ripemd320' => 64,
-			'salsa10' => 64,
-			'salsa20' => 64,
 			'sha1' => 64,
 			'sha224' => 64,
 			'sha256' => 64,

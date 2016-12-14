@@ -184,7 +184,7 @@ abstract class CI_DB_forge {
 		{
 			return ($this->db->db_debug) ? $this->db->display_error('db_unsupported_feature') : FALSE;
 		}
-		elseif ( ! $this->db->query(sprintf($this->_create_database, $db_name, $this->db->char_set, $this->db->dbcollat)))
+		elseif ( ! $this->db->query(sprintf($this->_create_database, $this->db->escape_identifiers($db_name), $this->db->char_set, $this->db->dbcollat)))
 		{
 			return ($this->db->db_debug) ? $this->db->display_error('db_unable_to_drop') : FALSE;
 		}
@@ -211,7 +211,7 @@ abstract class CI_DB_forge {
 		{
 			return ($this->db->db_debug) ? $this->db->display_error('db_unsupported_feature') : FALSE;
 		}
-		elseif ( ! $this->db->query(sprintf($this->_drop_database, $db_name)))
+		elseif ( ! $this->db->query(sprintf($this->_drop_database, $this->db->escape_identifiers($db_name))))
 		{
 			return ($this->db->db_debug) ? $this->db->display_error('db_unable_to_drop') : FALSE;
 		}
@@ -894,21 +894,33 @@ abstract class CI_DB_forge {
 			return;
 		}
 
-		if (array_key_exists('DEFAULT', $attributes))
+		if ( ! array_key_exists('DEFAULT', $attributes))
 		{
-			if ($attributes['DEFAULT'] === NULL)
-			{
-				$field['default'] = empty($this->_null) ? '' : $this->_default.$this->_null;
-
-				// Override the NULL attribute if that's our default
-				$attributes['NULL'] = TRUE;
-				$field['null'] = empty($this->_null) ? '' : ' '.$this->_null;
-			}
-			else
-			{
-				$field['default'] = $this->_default.$this->db->escape($attributes['DEFAULT']);
-			}
+			return;
 		}
+
+		if ($attributes['DEFAULT'] === NULL)
+		{
+			$field['default'] = empty($this->_null) ? '' : $this->_default.$this->_null;
+
+			// Override the NULL attribute if that's our default
+			$attributes['NULL'] = TRUE;
+			$field['null'] = empty($this->_null) ? '' : ' '.$this->_null;
+			return;
+		}
+
+		// White-list CURRENT_TIMESTAMP & similar (e.g. Oracle has stuff like SYSTIMESTAMP) defaults for date/time fields
+		if (
+			isset($attributes['TYPE'])
+			&& (stripos($attributes['TYPE'],    'time') !== FALSE OR stripos($attributes['TYPE'],    'date') !== FALSE)
+			&& (stripos($attributes['DEFAULT'], 'time') !== FALSE OR stripos($attributes['DEFAULT'], 'date') !== FALSE)
+		)
+		{
+			$field['default'] = $this->_default.$attributes['DEFAULT'];
+			return;
+		}
+
+		$field['default'] = $this->_default.$this->db->escape($attributes['DEFAULT']);
 	}
 
 	// --------------------------------------------------------------------

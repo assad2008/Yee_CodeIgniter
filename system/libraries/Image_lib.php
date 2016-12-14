@@ -456,7 +456,7 @@ class CI_Image_lib {
 			{
 				if (property_exists($this, $key))
 				{
-					if (in_array($key, array('wm_font_color', 'wm_shadow_color')))
+					if (in_array($key, array('wm_font_color', 'wm_shadow_color'), TRUE))
 					{
 						if (preg_match('/^#?([0-9a-f]{3}|[0-9a-f]{6})$/i', $val, $matches))
 						{
@@ -477,6 +477,10 @@ class CI_Image_lib {
 						{
 							continue;
 						}
+					}
+					elseif (in_array($key, array('width', 'height'), TRUE) && ! ctype_digit((string) $val))
+					{
+						continue;
 					}
 
 					$this->$key = $val;
@@ -540,37 +544,30 @@ class CI_Image_lib {
 		 */
 		if ($this->new_image === '')
 		{
-			$this->dest_image = $this->source_image;
+			$this->dest_image  = $this->source_image;
 			$this->dest_folder = $this->source_folder;
 		}
-		elseif (strpos($this->new_image, '/') === FALSE)
+		elseif (strpos($this->new_image, '/') === FALSE && strpos($this->new_image, '\\') === FALSE)
 		{
+			$this->dest_image  = $this->new_image;
 			$this->dest_folder = $this->source_folder;
-			$this->dest_image = $this->new_image;
 		}
 		else
 		{
-			if (strpos($this->new_image, '/') === FALSE && strpos($this->new_image, '\\') === FALSE)
+			// Is there a file name?
+			if ( ! preg_match('#\.(jpg|jpeg|gif|png)$#i', $this->new_image))
 			{
-				$full_dest_path = str_replace('\\', '/', realpath($this->new_image));
+				$this->dest_image  = $this->source_image;
+				$this->dest_folder = $this->new_image;
 			}
 			else
 			{
-				$full_dest_path = $this->new_image;
+				$x = explode('/', str_replace('\\', '/', $this->new_image));
+				$this->dest_image  = end($x);
+				$this->dest_folder = str_replace($this->dest_image, '', $this->new_image);
 			}
 
-			// Is there a file name?
-			if ( ! preg_match('#\.(jpg|jpeg|gif|png)$#i', $full_dest_path))
-			{
-				$this->dest_folder = $full_dest_path.'/';
-				$this->dest_image = $this->source_image;
-			}
-			else
-			{
-				$x = explode('/', $full_dest_path);
-				$this->dest_image = end($x);
-				$this->dest_folder = str_replace($this->dest_image, '', $full_dest_path);
-			}
+			$this->dest_folder = realpath($this->dest_folder).'/';
 		}
 
 		/* Compile the finalized filenames/paths
@@ -862,26 +859,27 @@ class CI_Image_lib {
 
 		if ($action === 'crop')
 		{
-			$cmd .= ' -crop '.$this->width.'x'.$this->height.'+'.$this->x_axis.'+'.$this->y_axis.' "'.$this->full_src_path.'" "'.$this->full_dst_path .'" 2>&1';
+			$cmd .= ' -crop '.$this->width.'x'.$this->height.'+'.$this->x_axis.'+'.$this->y_axis;
 		}
 		elseif ($action === 'rotate')
 		{
-			$angle = ($this->rotation_angle === 'hor' OR $this->rotation_angle === 'vrt')
-					? '-flop' : '-rotate '.$this->rotation_angle;
-
-			$cmd .= ' '.$angle.' "'.$this->full_src_path.'" "'.$this->full_dst_path.'" 2>&1';
+			$cmd .= ($this->rotation_angle === 'hor' OR $this->rotation_angle === 'vrt')
+					? ' -flop'
+					: ' -rotate '.$this->rotation_angle;
 		}
 		else // Resize
 		{
 			if($this->maintain_ratio === TRUE)
 			{
-				$cmd .= ' -resize '.$this->width.'x'.$this->height.' "'.$this->full_src_path.'" "'.$this->full_dst_path.'" 2>&1';
+				$cmd .= ' -resize '.$this->width.'x'.$this->height;
 			}
 			else
 			{
-				$cmd .= ' -resize '.$this->width.'x'.$this->height.'\! "'.$this->full_src_path.'" "'.$this->full_dst_path.'" 2>&1';
+				$cmd .= ' -resize '.$this->width.'x'.$this->height.'\!';
 			}
 		}
+
+		$cmd .= ' '.escapeshellarg($this->full_src_path).' '.escapeshellarg($this->full_dst_path).' 2>&1';
 
 		$retval = 1;
 		// exec() might be disabled

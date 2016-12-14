@@ -238,9 +238,77 @@ if ( ! function_exists('is_countable'))
 		return ! in_array(
 			strtolower($word),
 			array(
-				'equipment', 'information', 'rice', 'money',
-				'species', 'series', 'fish', 'meta'
+				'audio',
+				'bison',
+				'chassis',
+				'compensation',
+				'coreopsis',
+				'data',
+				'deer',
+				'education',
+				'emoji',
+				'equipment',
+				'fish',
+				'furniture',
+				'gold',
+				'information',
+				'knowledge',
+				'love',
+				'rain',
+				'money',
+				'moose',
+				'nutrition',
+				'offspring',
+				'plankton',
+				'pokemon',
+				'police',
+				'rice',
+				'series',
+				'sheep',
+				'species',
+				'swine',
+				'traffic',
+				'wheat'
 			)
 		);
+	}
+}
+
+// ------------------------------------------------------------------------
+
+if ( ! function_exists('ordinal_format'))
+{
+	/**
+	 * Returns the English ordinal numeral for a given number
+	 *
+	 * @param  int    $number
+	 * @return string
+	 */
+	function ordinal_format($number)
+	{
+		if ( ! ctype_digit((string) $number) OR $number < 1)
+		{
+			return $number;
+		}
+
+		$last_digit = array(
+			0 => 'th',
+			1 => 'st',
+			2 => 'nd',
+			3 => 'rd',
+			4 => 'th',
+			5 => 'th',
+			6 => 'th',
+			7 => 'th',
+			8 => 'th',
+			9 => 'th'
+		);
+
+		if (($number % 100) >= 11 && ($number % 100) <= 13)
+		{
+			return $number.'th';
+		}
+
+		return $number.$last_digit[$number % 10];
 	}
 }

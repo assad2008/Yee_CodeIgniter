@@ -163,6 +163,13 @@ class CI_DB_postgre_driver extends CI_DB {
 				return FALSE;
 			}
 
+			if (pg_set_client_encoding($this->conn_id, $this->char_set) !== 0)
+			{
+				log_message('error', "Database: Unable to set the configured connection charset ('{$this->char_set}').");
+				pg_close($this->conn_id);
+				return ($this->db->db_debug) ? $this->display_error('db_unable_to_set_charset', $this->char_set) : FALSE;
+			}
+
 			empty($this->schema) OR $this->simple_query('SET search_path TO '.$this->schema.',public');
 		}
 
@@ -185,19 +192,6 @@ class CI_DB_postgre_driver extends CI_DB {
 		{
 			$this->conn_id = FALSE;
 		}
-	}
-
-	// --------------------------------------------------------------------
-
-	/**
-	 * Set client character set
-	 *
-	 * @param	string	$charset
-	 * @return	bool
-	 */
-	protected function _db_set_charset($charset)
-	{
-		return (pg_set_client_encoding($this->conn_id, $charset) === 0);
 	}
 
 	// --------------------------------------------------------------------
@@ -288,7 +282,7 @@ class CI_DB_postgre_driver extends CI_DB {
 	 */
 	public function is_write_type($sql)
 	{
-		if (preg_match('#^(INSERT|UPDATE).*RETURNING\s.+(\,\s?.+)*$#i', $sql))
+		if (preg_match('#^(INSERT|UPDATE).*RETURNING\s.+(\,\s?.+)*$#is', $sql))
 		{
 			return FALSE;
 		}
@@ -321,7 +315,7 @@ class CI_DB_postgre_driver extends CI_DB {
 	 */
 	public function escape($str)
 	{
-		if (is_php('5.4.4') && (is_string($str) OR (is_object($str) && method_exists($str, '__toString'))))
+		if (is_string($str) OR (is_object($str) && method_exists($str, '__toString')))
 		{
 			return pg_escape_literal($this->conn_id, $str);
 		}
@@ -550,13 +544,13 @@ class CI_DB_postgre_driver extends CI_DB {
 		$ids = array();
 		foreach ($values as $key => $val)
 		{
-			$ids[] = $val[$index];
+			$ids[] = $val[$index]['value'];
 
 			foreach (array_keys($val) as $field)
 			{
 				if ($field !== $index)
 				{
-					$final[$field][] = 'WHEN '.$val[$index].' THEN '.$val[$field];
+					$final[$val[$field]['field']][] = 'WHEN '.$val[$index]['value'].' THEN '.$val[$field]['value'];
 				}
 			}
 		}
@@ -564,12 +558,12 @@ class CI_DB_postgre_driver extends CI_DB {
 		$cases = '';
 		foreach ($final as $k => $v)
 		{
-			$cases .= $k.' = (CASE '.$index."\n"
+			$cases .= $k.' = (CASE '.$val[$index]['field']."\n"
 				.implode("\n", $v)."\n"
 				.'ELSE '.$k.' END), ';
 		}
 
-		$this->where($index.' IN('.implode(',', $ids).')', NULL, FALSE);
+		$this->where($val[$index]['field'].' IN('.implode(',', $ids).')', NULL, FALSE);
 
 		return 'UPDATE '.$table.' SET '.substr($cases, 0, -2).$this->_compile_wh('qb_where');
 	}
