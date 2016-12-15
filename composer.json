@@ -10,6 +10,7 @@
 			"vendor/Myext/Functions/Functions.php"
 		],
 		"classmap":[
+			"vendor/Myext/Libs"
 		]
 	}
 }

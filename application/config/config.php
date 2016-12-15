@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://ciend.xyz';
 
 /*
 |--------------------------------------------------------------------------
@@ -116,7 +116,7 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'My_';
 
 /*
 |--------------------------------------------------------------------------
@@ -213,54 +213,10 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
-
-/*
-|--------------------------------------------------------------------------
-| Error Logging Directory Path
-|--------------------------------------------------------------------------
-|
-| Leave this BLANK unless you would like to set something other than the default
-| application/logs/ directory. Use a full server path with trailing slash.
-|
-*/
-$config['log_path'] = '';
-
-/*
-|--------------------------------------------------------------------------
-| Log File Extension
-|--------------------------------------------------------------------------
-|
-| The default filename extension for log files. The default 'php' allows for
-| protecting the log files via basic scripting, when they are to be stored
-| under a publicly accessible directory.
-|
-| Note: Leaving it blank will default to 'php'.
-|
-*/
-$config['log_file_extension'] = '';
-
-/*
-|--------------------------------------------------------------------------
-| Log File Permissions
-|--------------------------------------------------------------------------
-|
-| The file system permissions to be applied on newly created log files.
-|
-| IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
-|            integer notation (i.e. 0700, 0644, etc.)
-*/
+$config['log_threshold'] = 1;
+$config['log_path'] = FCPATH . 'data/logs' . DIRECTORY_SEPARATOR;
+$config['log_file_extension'] = '.log';
 $config['log_file_permissions'] = 0644;
-
-/*
-|--------------------------------------------------------------------------
-| Date Format for Logs
-|--------------------------------------------------------------------------
-|
-| Each item that is logged has an associated date. You can use PHP date
-| codes to set your own date formatting
-|
-*/
 $config['log_date_format'] = 'Y-m-d H:i:s';
 
 /*
@@ -283,7 +239,7 @@ $config['error_views_path'] = '';
 | application/cache/ directory.  Use a full server path with trailing slash.
 |
 */
-$config['cache_path'] = '';
+$config['cache_path'] = FCPATH . 'data/cache' . DIRECTORY_SEPARATOR;
 
 /*
 |--------------------------------------------------------------------------
@@ -314,7 +270,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'fsdhfgdjkhgdfk*(&*^^%&^%';
 
 /*
 |--------------------------------------------------------------------------
@@ -368,9 +324,9 @@ $config['encryption_key'] = '';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
+$config['sess_cookie_name'] = 'ciend_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = FCPATH . "data/session" . DIRECTORY_SEPARATOR;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
