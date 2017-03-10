@@ -52,6 +52,16 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'Hautelook' => 
+            array (
+                0 => __DIR__ . '/..' . '/hautelook/phpass/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Cismarty' => __DIR__ . '/..' . '/Myext/Libs/Cismarty.php',
         'Tracy\\Bar' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar.php',
@@ -73,6 +83,7 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf316fa36682f9738c646a9622b70eb9b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf316fa36682f9738c646a9622b70eb9b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf316fa36682f9738c646a9622b70eb9b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf316fa36682f9738c646a9622b70eb9b::$classMap;
 
         }, null, ClassLoader::class);
