@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-05-15 07:40:49
+/* Smarty version 3.1.31, created on 2017-05-15 10:21:27
   from "/home/data/wwwroot/My_CodeIgniter/application/views/template/welcome.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5918eb016c7016_12153448',
+  'unifunc' => 'content_591910a7230a20_57815197',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '91bb108be58e639f1ae35b3b83d1270639a4b6a4' => 
     array (
       0 => '/home/data/wwwroot/My_CodeIgniter/application/views/template/welcome.html',
-      1 => 1481770699,
+      1 => 1494814808,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5918eb016c7016_12153448 (Smarty_Internal_Template $_smarty_tpl) {
+function content_591910a7230a20_57815197 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <!DOCTYPE html>
@@ -101,11 +101,9 @@ function content_5918eb016c7016_12153448 (Smarty_Internal_Template $_smarty_tpl)
 
 		<p>The corresponding controller for this page is found at:</p>
 		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
-	<p class="footer">Page rendered in <strong>0.0087</strong> seconds. CodeIgniter Version <strong>3.2.0-dev</strong></p>
+	<p class="footer">Page rendered in <strong>0.0087</strong> seconds. CodeIgniter Version <strong>3.1.4</strong></p>
 </div>
 </body>
 </html><?php }
