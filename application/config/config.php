@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | If you need to allow multiple domains, remember that this file is still
 | a PHP script and you can easily do that on your own.
 |
-*/
+ */
 $config['base_url'] = 'http://ciend.xyz';
 
 /*
@@ -34,7 +34,7 @@ $config['base_url'] = 'http://ciend.xyz';
 | something else. If you are using mod_rewrite to remove the page set this
 | variable so that it is blank.
 |
-*/
+ */
 $config['index_page'] = 'index.php';
 
 /*
@@ -51,8 +51,8 @@ $config['index_page'] = 'index.php';
 | 'PATH_INFO'      Uses $_SERVER['PATH_INFO']
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
-*/
-$config['uri_protocol']	= 'REQUEST_URI';
+ */
+$config['uri_protocol'] = 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ $config['uri_protocol']	= 'REQUEST_URI';
 | https://codeigniter.com/user_guide/general/urls.html
 |
 | Note: This option is ignored for CLI requests.
-*/
+ */
 $config['url_suffix'] = '';
 
 /*
@@ -77,8 +77,8 @@ $config['url_suffix'] = '';
 | there is an available translation if you intend to use something other
 | than english.
 |
-*/
-$config['language']	= 'english';
+ */
+$config['language'] = 'english';
 
 /*
 |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ $config['language']	= 'english';
 |
 | See http://php.net/htmlspecialchars for a list of supported charsets.
 |
-*/
+ */
 $config['charset'] = 'UTF-8';
 
 /*
@@ -101,7 +101,7 @@ $config['charset'] = 'UTF-8';
 | If you would like to use the 'hooks' feature you must enable it by
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
-*/
+ */
 $config['enable_hooks'] = FALSE;
 
 /*
@@ -115,7 +115,7 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/core_classes.html
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
-*/
+ */
 $config['subclass_prefix'] = 'My_';
 
 /*
@@ -137,7 +137,7 @@ $config['subclass_prefix'] = 'My_';
 |
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
-*/
+ */
 $config['composer_autoload'] = FALSE;
 
 /*
@@ -161,7 +161,7 @@ $config['composer_autoload'] = FALSE;
 |
 | Note: This option is ignored for CLI requests.
 |
-*/
+ */
 $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 
 /*
@@ -185,7 +185,7 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 | this feature is enabled, since CodeIgniter is designed primarily to
 | use segment based URLs.
 |
-*/
+ */
 $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
@@ -212,7 +212,7 @@ $config['directory_trigger'] = 'd';
 | For a live site you'll usually only enable Errors (1) to be logged otherwise
 | your log files will fill up very fast.
 |
-*/
+ */
 $config['log_threshold'] = 1;
 $config['log_path'] = FCPATH . 'data/logs' . DIRECTORY_SEPARATOR;
 $config['log_file_extension'] = '.log';
@@ -227,7 +227,7 @@ $config['log_date_format'] = 'Y-m-d H:i:s';
 | Leave this BLANK unless you would like to set something other than the default
 | application/views/errors/ directory.  Use a full server path with trailing slash.
 |
-*/
+ */
 $config['error_views_path'] = '';
 
 /*
@@ -238,7 +238,7 @@ $config['error_views_path'] = '';
 | Leave this BLANK unless you would like to set something other than the default
 | application/cache/ directory.  Use a full server path with trailing slash.
 |
-*/
+ */
 $config['cache_path'] = FCPATH . 'data/cache' . DIRECTORY_SEPARATOR;
 
 /*
@@ -256,7 +256,7 @@ $config['cache_path'] = FCPATH . 'data/cache' . DIRECTORY_SEPARATOR;
 |	array('q') = Enabled, but only take into account the specified list
 |	             of query parameters.
 |
-*/
+ */
 $config['cache_query_string'] = FALSE;
 
 /*
@@ -269,8 +269,8 @@ $config['cache_query_string'] = FALSE;
 |
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
-*/
-$config['encryption_key'] = 'fsdhfgdjkhgdfk*(&*^^%&^%';
+ */
+$config['encryption_key'] = 'hd9gf61ktv4iagnlh78ouimnl5ou89tj';
 
 /*
 |--------------------------------------------------------------------------
@@ -322,9 +322,9 @@ $config['encryption_key'] = 'fsdhfgdjkhgdfk*(&*^^%&^%';
 | Other session cookie settings are shared with the rest of the application,
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
-*/
+ */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ciend_session';
+$config['sess_cookie_name'] = 'ciend_session_';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = FCPATH . "data/session" . DIRECTORY_SEPARATOR;
 $config['sess_match_ip'] = FALSE;
@@ -345,12 +345,12 @@ $config['sess_regenerate_destroy'] = FALSE;
 | Note: These settings (with the exception of 'cookie_prefix' and
 |       'cookie_httponly') will also affect sessions.
 |
-*/
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+ */
+$config['cookie_prefix'] = '';
+$config['cookie_domain'] = '';
+$config['cookie_path'] = '/';
+$config['cookie_secure'] = FALSE;
+$config['cookie_httponly'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -365,7 +365,7 @@ $config['cookie_httponly'] 	= FALSE;
 | 'csrf_expire' = The number in seconds the token should expire.
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
-*/
+ */
 $config['csrf_protection'] = FALSE;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
@@ -392,7 +392,7 @@ $config['csrf_exclude_uris'] = array();
 | compression to work, nothing can be sent before the output buffer is called
 | by the output class.  Do not 'echo' any values with compression enabled.
 |
-*/
+ */
 $config['compress_output'] = FALSE;
 
 /*
@@ -405,7 +405,7 @@ $config['compress_output'] = FALSE;
 | reference, or convert it to the configured one timezone. See the 'date
 | helper' page of the user guide for information regarding date handling.
 |
-*/
+ */
 $config['time_reference'] = 'local';
 
 /*
@@ -423,5 +423,5 @@ $config['time_reference'] = 'local';
 |
 | Comma-separated:	'10.0.1.200,192.168.5.0/24'
 | Array:		array('10.0.1.200', '192.168.5.0/24')
-*/
+ */
 $config['proxy_ips'] = '';
