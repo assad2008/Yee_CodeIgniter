@@ -12,10 +12,15 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
         'f084d01b0a599f67676cffef638aa95b' => __DIR__ . '/..' . '/smarty/smarty/libs/bootstrap.php',
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '2208db94ce05fb2f82040fa4f2ccdbe6' => __DIR__ . '/..' . '/leeoniya/dump-r/dump_r.php',
         '2980ecea46b6468639b6a2814cbb8e8a' => __DIR__ . '/..' . '/Myext/Functions/Functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'd' => 
+        array (
+            'dump_r\\' => 7,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -30,6 +35,10 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
     );
 
     public static $prefixDirsPsr4 = array (
+        'dump_r\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/leeoniya/dump-r/src/dump_r',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',

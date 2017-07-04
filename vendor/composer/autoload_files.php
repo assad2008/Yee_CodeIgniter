@@ -11,5 +11,6 @@ return array(
     'f084d01b0a599f67676cffef638aa95b' => $vendorDir . '/smarty/smarty/libs/bootstrap.php',
     '7745382c92b7799bf1294b1f43023ba2' => $vendorDir . '/tracy/tracy/src/shortcuts.php',
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
+    '2208db94ce05fb2f82040fa4f2ccdbe6' => $vendorDir . '/leeoniya/dump-r/dump_r.php',
     '2980ecea46b6468639b6a2814cbb8e8a' => $vendorDir . '/Myext/Functions/Functions.php',
 );

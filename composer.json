@@ -4,7 +4,8 @@
         "smarty/smarty": "^3.1",
         "gregwar/captcha": "^1.1",
         "guzzlehttp/guzzle": "^6.2",
-        "hautelook/phpass": "^1.1"
+        "hautelook/phpass": "^1.1",
+        "leeoniya/dump-r": "^2.1"
     },
 	"autoload": {
 		"files":[
