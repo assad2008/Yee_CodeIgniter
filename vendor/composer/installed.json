@@ -323,75 +323,6 @@
         ]
     },
     {
-        "name": "tracy/tracy",
-        "version": "v2.4.7",
-        "version_normalized": "2.4.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nette/tracy.git",
-            "reference": "e9e93b778a75760a939593384e326fb65f9a0da2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nette/tracy/zipball/e9e93b778a75760a939593384e326fb65f9a0da2",
-            "reference": "e9e93b778a75760a939593384e326fb65f9a0da2",
-            "shasum": ""
-        },
-        "require": {
-            "ext-json": "*",
-            "ext-session": "*",
-            "php": ">=5.4.4"
-        },
-        "require-dev": {
-            "nette/di": "~2.3",
-            "nette/tester": "~2.0"
-        },
-        "suggest": {
-            "https://nette.org/donate": "\u001b[1;37;42m Please consider supporting Tracy via a donation \u001b[0m"
-        },
-        "time": "2017-05-11T14:28:35+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src"
-            ],
-            "files": [
-                "src/shortcuts.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause",
-            "GPL-2.0",
-            "GPL-3.0"
-        ],
-        "authors": [
-            {
-                "name": "David Grudl",
-                "homepage": "https://davidgrudl.com"
-            },
-            {
-                "name": "Nette Community",
-                "homepage": "https://nette.org/contributors"
-            }
-        ],
-        "description": "😎 Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
-        "homepage": "https://tracy.nette.org",
-        "keywords": [
-            "Xdebug",
-            "debug",
-            "debugger",
-            "nette",
-            "profiler"
-        ]
-    },
-    {
         "name": "guzzlehttp/guzzle",
         "version": "6.3.0",
         "version_normalized": "6.3.0.0",
@@ -565,57 +496,6 @@
             "mobile detect",
             "mobile detector",
             "php mobile detect"
-        ]
-    },
-    {
-        "name": "jaybizzle/crawler-detect",
-        "version": "v1.2.49",
-        "version_normalized": "1.2.49.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-            "reference": "c41589beba1b0c819e118d3c6f0b0b523aac0ddf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/c41589beba1b0c819e118d3c6f0b0b523aac0ddf",
-            "reference": "c41589beba1b0c819e118d3c6f0b0b523aac0ddf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.8.*",
-            "satooshi/php-coveralls": "1.*"
-        },
-        "time": "2017-06-30T13:20:02+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Jaybizzle\\CrawlerDetect\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mark Beech",
-                "email": "m@rkbee.ch",
-                "role": "Developer"
-            }
-        ],
-        "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
-        "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
-        "keywords": [
-            "crawler",
-            "crawler detect",
-            "crawler detector",
-            "crawlerdetect",
-            "php crawler detect"
         ]
     },
     {
@@ -899,6 +779,57 @@
             "platform",
             "user agent",
             "useragent"
+        ]
+    },
+    {
+        "name": "jaybizzle/crawler-detect",
+        "version": "v1.2.50",
+        "version_normalized": "1.2.50.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+            "reference": "c9638a5d7d6fc4ecfb35f32a9cc6d05bc4f5a914"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/c9638a5d7d6fc4ecfb35f32a9cc6d05bc4f5a914",
+            "reference": "c9638a5d7d6fc4ecfb35f32a9cc6d05bc4f5a914",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.*",
+            "satooshi/php-coveralls": "1.*"
+        },
+        "time": "2017-07-03T20:56:40+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jaybizzle\\CrawlerDetect\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Beech",
+                "email": "m@rkbee.ch",
+                "role": "Developer"
+            }
+        ],
+        "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+        "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+        "keywords": [
+            "crawler",
+            "crawler detect",
+            "crawler detector",
+            "crawlerdetect",
+            "php crawler detect"
         ]
     }
 ]
