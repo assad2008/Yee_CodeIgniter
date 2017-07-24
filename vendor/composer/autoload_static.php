@@ -42,6 +42,10 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
             'GuzzleHttp\\' => 11,
             'Gregwar\\Captcha\\' => 16,
         ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 26,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -85,6 +89,10 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -97,10 +105,6 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
         ),
         'D' => 
         array (
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
-            ),
             'Detection' => 
             array (
                 0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',

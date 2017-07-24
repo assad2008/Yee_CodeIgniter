@@ -7,6 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Hautelook' => array($vendorDir . '/hautelook/phpass/src'),
-    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
 );

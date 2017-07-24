@@ -104,3 +104,22 @@ DEBUG - 2017-07-20 10:45:07 --> UTF-8 Support Enabled
 DEBUG - 2017-07-20 10:45:07 --> No URI present. Default controller set.
 DEBUG - 2017-07-20 10:45:07 --> Global POST, GET and COOKIE data sanitized
 DEBUG - 2017-07-20 10:45:07 --> Total execution time: 0.0374
+DEBUG - 2017-07-20 10:47:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 10:47:35 --> No URI present. Default controller set.
+DEBUG - 2017-07-20 10:47:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-20 10:47:35 --> Total execution time: 0.0366
+DEBUG - 2017-07-20 22:49:17 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 22:49:17 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-20 22:49:17 --> 404 Page Not Found: Phpmyadmin/index
+DEBUG - 2017-07-20 22:49:18 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 22:49:18 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-20 22:49:18 --> 404 Page Not Found: PhpMyAdmin/index
+DEBUG - 2017-07-20 22:49:19 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 22:49:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-20 22:49:19 --> 404 Page Not Found: Pma/index
+DEBUG - 2017-07-20 22:49:19 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 22:49:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-20 22:49:19 --> 404 Page Not Found: Myadmin/index
+DEBUG - 2017-07-20 22:49:20 --> UTF-8 Support Enabled
+DEBUG - 2017-07-20 22:49:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-20 22:49:20 --> 404 Page Not Found: Sql/index
