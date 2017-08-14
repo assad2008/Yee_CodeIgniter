@@ -1,0 +1,39 @@
+DEBUG - 2017-08-03 10:43:16 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 10:43:16 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 10:43:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 10:43:16 --> Total execution time: 0.2637
+DEBUG - 2017-08-03 14:32:52 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 14:32:52 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 14:32:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 14:32:52 --> Total execution time: 0.2808
+DEBUG - 2017-08-03 14:32:52 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 14:32:52 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 14:32:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 14:32:52 --> Total execution time: 0.0842
+DEBUG - 2017-08-03 20:38:10 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 20:38:10 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 20:38:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 20:38:10 --> Total execution time: 0.0485
+DEBUG - 2017-08-03 22:10:36 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:36 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 22:10:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 22:10:36 --> Total execution time: 0.0574
+DEBUG - 2017-08-03 22:10:38 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:38 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 22:10:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 22:10:38 --> Total execution time: 0.0412
+DEBUG - 2017-08-03 22:10:40 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:40 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 22:10:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 22:10:41 --> Total execution time: 0.0656
+DEBUG - 2017-08-03 22:10:42 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:42 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 22:10:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 22:10:42 --> Total execution time: 0.0367
+DEBUG - 2017-08-03 22:10:44 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:44 --> No URI present. Default controller set.
+DEBUG - 2017-08-03 22:10:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-03 22:10:44 --> Total execution time: 0.0421
+DEBUG - 2017-08-03 22:10:45 --> UTF-8 Support Enabled
+DEBUG - 2017-08-03 22:10:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-03 22:10:45 --> 404 Page Not Found: User/register

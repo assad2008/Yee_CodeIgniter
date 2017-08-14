@@ -11,6 +11,7 @@ class Welcome extends Unlogined_Controller
 
     public function index()
     {
-        $this->smarty->display("welcome.html");
+        $this->view->assign("welcome", "Welcome CodeIgniter");
+        $this->view->display("main.html");
     }
 }

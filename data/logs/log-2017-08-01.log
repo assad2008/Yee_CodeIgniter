@@ -1,0 +1,24 @@
+DEBUG - 2017-08-01 03:31:18 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 03:31:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-01 03:31:19 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-08-01 03:31:22 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 03:31:22 --> No URI present. Default controller set.
+DEBUG - 2017-08-01 03:31:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-01 03:31:22 --> Total execution time: 0.0364
+DEBUG - 2017-08-01 14:37:58 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 14:37:58 --> No URI present. Default controller set.
+DEBUG - 2017-08-01 14:37:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-01 14:37:58 --> Total execution time: 0.2518
+DEBUG - 2017-08-01 20:24:44 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 20:24:44 --> No URI present. Default controller set.
+DEBUG - 2017-08-01 20:24:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-01 20:24:44 --> Total execution time: 0.0641
+DEBUG - 2017-08-01 23:08:59 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 23:08:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-01 23:08:59 --> 404 Page Not Found: Licensetxt/index
+DEBUG - 2017-08-01 23:13:38 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 23:13:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-01 23:13:38 --> 404 Page Not Found: READMEtxt/index
+DEBUG - 2017-08-01 23:18:22 --> UTF-8 Support Enabled
+DEBUG - 2017-08-01 23:18:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-01 23:18:22 --> 404 Page Not Found: LICENSE/index

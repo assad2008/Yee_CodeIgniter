@@ -1,0 +1,11 @@
+DEBUG - 2017-08-05 20:36:39 --> UTF-8 Support Enabled
+DEBUG - 2017-08-05 20:36:39 --> No URI present. Default controller set.
+DEBUG - 2017-08-05 20:36:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-05 20:36:39 --> Total execution time: 0.0384
+DEBUG - 2017-08-05 21:05:14 --> UTF-8 Support Enabled
+DEBUG - 2017-08-05 21:05:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-05 21:05:14 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-08-05 21:05:18 --> UTF-8 Support Enabled
+DEBUG - 2017-08-05 21:05:18 --> No URI present. Default controller set.
+DEBUG - 2017-08-05 21:05:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-05 21:05:18 --> Total execution time: 0.0377

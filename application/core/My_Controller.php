@@ -16,7 +16,7 @@ class My_Controller extends CI_Controller
 
     public $db;
     public $base_url;
-    public $smarty;
+    public $view;
 
     public function __construct()
     {
@@ -28,11 +28,26 @@ class My_Controller extends CI_Controller
     {
         $this->db = $this->load->database('default', true);
         $this->load->driver('cache', array('adapter' => 'file'));
-        $this->smarty = new Cismarty();
+        $this->_view();
         $this->base_url = base_url();
-        $this->smarty->assign('base_url', $this->base_url);
-        $this->smarty->assign('systime', date('r'));
+        $this->view->assign('base_url', $this->base_url);
+        $this->view->assign('systime', date('r'));
         $this->ismobile = $this->ua->is_mobile;
+    }
+
+    private function _view()
+    {
+        $this->config->load("twig");
+        $view_config = $this->config->item("twig");
+        $view_dir = $view_config["view_dir"];
+        $options = [
+            "cache" => $view_config["view_cache"],
+            "debug" => true,
+            "charset" => "UTF-8",
+        ];
+        $params = ["view" => $view_dir, "options" => $options];
+        $this->load->library('twig', $params);
+        $this->view = $this->twig;
     }
 
     public function showmsg($messages, $url_forward = '', $second = 3)
@@ -44,12 +59,12 @@ class My_Controller extends CI_Controller
             if ($url_forward) {
                 $message = "<font color=\"red\" size=\"5\"><b>{$messages}</b></font><script>setTimeout(\"window.location.href ='$url_forward';\", " . ($second * 1000) . ");</script>";
             }
-            $this->smarty->assign('msg', $message);
-            $this->smarty->assign('second', $second);
-            $this->smarty->assign('message', $messages);
-            $this->smarty->assign('content', "<a href=\"$url_forward\">" . $messages . "</a>");
-            $this->smarty->assign('gourl', $url_forward);
-            $this->smarty->display('message.html');
+            $this->view->assign('msg', $message);
+            $this->view->assign('second', $second);
+            $this->view->assign('message', $messages);
+            $this->view->assign('content', "<a href=\"$url_forward\">" . $messages . "</a>");
+            $this->view->assign('gourl', $url_forward);
+            $this->view->display('message.html');
         }
         exit();
     }
@@ -64,7 +79,7 @@ class Unlogined_Controller extends My_Controller
     {
         parent::__construct();
         $this->loginstatus();
-        $this->smarty->assign("userinfo", $this->userinfo);
+        $this->view->assign("userinfo", $this->userinfo);
     }
 
     private function loginstatus()
@@ -87,7 +102,7 @@ class Logined_Controller extends My_Controller
     {
         parent::__construct();
         $this->_check_login();
-        $this->smarty->assign("userinfo", $this->userinfo);
+        $this->view->assign("userinfo", $this->userinfo);
     }
 
     private function _check_login()
