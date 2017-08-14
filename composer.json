@@ -1,10 +1,6 @@
 {
     "require": {
-        "gregwar/captcha": "^1.1",
-        "guzzlehttp/guzzle": "^6.2",
-        "hautelook/phpass": "^1.1",
         "leeoniya/dump-r": "^2.1",
-        "jenssegers/agent": "^2.5",
         "twig/twig": "^2.4"
     },
 	"autoload": {

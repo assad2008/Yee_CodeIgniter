@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Cismarty' => $vendorDir . '/Myext/Libs/Cismarty.php',
-    'Mobile_Detect' => $vendorDir . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
 );

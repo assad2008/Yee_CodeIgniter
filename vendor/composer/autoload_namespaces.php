@@ -7,6 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
-    'Hautelook' => array($vendorDir . '/hautelook/phpass/src'),
-    'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
 );
