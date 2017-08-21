@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * @Filename: Welcome.php
+ * @Author: assad
+ * @Date:   2017-08-21 11:38:48
+ * @Synopsis: Welcome
+ * @Version: 1.0
+ * @Last Modified by:   assad
+ * @Last Modified time: 2017-08-21 11:39:06
+ * @Email: rlk002@gmail.com
+ */
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Welcome extends Unlogined_Controller

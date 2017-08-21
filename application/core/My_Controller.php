@@ -1,10 +1,14 @@
 <?php
+
 /**
- * @file My_Controller.php
- * @synopsis  核心控制器重写
- * @author Yee, <rlk002@gmail.com>
- * @version 1.0
- * @date 2017-7-20 14:46:29
+ * @Filename: My_Controller.php
+ * @Author: assad
+ * @Date:   2017-08-21 11:31:03
+ * @Synopsis: 核心控制器
+ * @Version: 1.0
+ * @Last Modified by:   assad
+ * @Last Modified time: 2017-08-21 11:38:20
+ * @Email: rlk002@gmail.com
  */
 
 if (!defined('BASEPATH')) {
