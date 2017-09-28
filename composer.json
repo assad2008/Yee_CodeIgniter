@@ -32,9 +32,9 @@
             "@clearSession",
             "@removeLogFile"
         ],
-        "clearCache": "rm -rf data/cache",
-        "clearViewCache": "rm -rf data/views",
-        "clearSession": "rm -rf data/session",
-        "removeLogFile": " rm -rf data/logs"
+        "clearCache": "rm -rf data/cache/*",
+        "clearViewCache": "rm -rf data/views/*",
+        "clearSession": "rm -rf data/session/*",
+        "removeLogFile": " rm -rf data/logs/*"
     }
 }
