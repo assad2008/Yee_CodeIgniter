@@ -6,28 +6,35 @@
     "homepage": "https://github.com/assad2008/My_CodeIgniter",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Yee",
-            "email": "rlk002@gmail.com",
-            "homepage": "https://wj.pe"
-        }
-    ],
-    "require": {
-    	"php": "^5.5 || ^7.0",
+    {
+        "name": "Yee",
+        "email": "rlk002@gmail.com",
+        "homepage": "https://wj.pe"
+    }],
+    "require":
+    {
+        "php": "^5.5 || ^7.0",
         "leeoniya/dump-r": "^2.1",
         "twig/twig": "^2.4"
     },
-	"autoload": {
-		"files":[
-		],
-		"classmap":[
-			"vendor/Myext/Libs"
-		]
-	},
-	"scripts": {
-		"clearCache": "rm -rf data/cache",
-		"clearViewCache": "rm -rf data/views",
-		"clearSession": "rm -rf data/session",
-		"removeLogFile": " rm -rf data/logs"
-	}
+    "autoload":
+    {
+        "files": [],
+        "classmap": [
+            "vendor/Myext/Libs"
+        ]
+    },
+    "scripts":
+    {
+        "test": [
+            "@clearCache",
+            "@clearViewCache",
+            "@clearSession",
+            "@removeLogFile"
+        ],
+        "clearCache": "rm -rf data/cache",
+        "clearViewCache": "rm -rf data/views",
+        "clearSession": "rm -rf data/session",
+        "removeLogFile": " rm -rf data/logs"
+    }
 }
