@@ -1,4 +1,16 @@
 {
+    "name": "assad2008/myci",
+    "description": "CodeIgniter application.",
+    "type": "project",
+    "keywords": ["CodeIgniter", "phpframeworks", "skeleton"],
+    "homepage": "https://github.com/assad2008/My_CodeIgniter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yee",
+            "email": "rlk002@gmail.com"
+        }
+    ],
     "require": {
         "leeoniya/dump-r": "^2.1",
         "twig/twig": "^2.4"
