@@ -13,5 +13,5 @@
 
 ## 安装项目
 
-`composer create-project assad2008/yeeslim3 --stability=dev project-name`
+`composer create-project assad2008/myci --stability=dev project-name`
 
