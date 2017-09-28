@@ -1,0 +1,84 @@
+DEBUG - 2017-08-26 00:39:43 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 00:39:43 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 00:39:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 00:39:43 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 00:39:43 --> Total execution time: 0.0260
+DEBUG - 2017-08-26 03:41:11 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 03:41:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 03:41:11 --> 404 Page Not Found: Sitesql/index
+DEBUG - 2017-08-26 03:44:38 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 03:44:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 03:44:38 --> 404 Page Not Found: Sitesql/index
+DEBUG - 2017-08-26 04:18:00 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 04:18:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 04:18:00 --> 404 Page Not Found: Datasql/index
+DEBUG - 2017-08-26 04:58:48 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 04:58:48 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 04:58:48 --> 404 Page Not Found: Mysqlsql/index
+DEBUG - 2017-08-26 05:44:50 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 05:44:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 05:44:50 --> 404 Page Not Found: Dbdumpsql/index
+DEBUG - 2017-08-26 06:02:44 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 06:02:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 06:02:44 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-08-26 06:02:48 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 06:02:48 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 06:02:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 06:02:48 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 06:02:48 --> Total execution time: 0.0263
+DEBUG - 2017-08-26 06:30:24 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 06:30:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 06:30:24 --> 404 Page Not Found: Dbtargz/index
+DEBUG - 2017-08-26 07:03:23 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 07:03:23 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 07:03:23 --> 404 Page Not Found: Dbzip/index
+DEBUG - 2017-08-26 07:08:59 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 07:08:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 07:08:59 --> 404 Page Not Found: Dbzip/index
+DEBUG - 2017-08-26 07:44:33 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 07:44:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 07:44:33 --> 404 Page Not Found: Tempsql/index
+DEBUG - 2017-08-26 08:25:24 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 08:25:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 08:25:24 --> 404 Page Not Found: Db_backupsql/index
+DEBUG - 2017-08-26 08:34:21 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 08:34:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 08:34:21 --> 404 Page Not Found: Db_backupsql/index
+DEBUG - 2017-08-26 09:12:44 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 09:12:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 09:12:44 --> 404 Page Not Found: Sqlgz/index
+DEBUG - 2017-08-26 09:49:36 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 09:49:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 09:49:36 --> 404 Page Not Found: Backupsqlgz/index
+DEBUG - 2017-08-26 10:33:12 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 10:33:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 10:33:12 --> 404 Page Not Found: Dbsqlgz/index
+DEBUG - 2017-08-26 11:15:36 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 11:15:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 11:15:36 --> 404 Page Not Found: Sqltgz/index
+DEBUG - 2017-08-26 12:41:34 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 12:41:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 12:41:34 --> 404 Page Not Found: Dumpsqlgz/index
+DEBUG - 2017-08-26 13:21:50 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 13:21:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-08-26 13:21:50 --> 404 Page Not Found: Userssql/index
+DEBUG - 2017-08-26 13:22:30 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 13:22:30 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 13:22:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 13:22:30 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 13:22:30 --> Total execution time: 0.0253
+DEBUG - 2017-08-26 14:18:26 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 14:18:26 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 14:18:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 14:18:26 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 14:18:26 --> Total execution time: 0.0249
+DEBUG - 2017-08-26 20:59:39 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 20:59:39 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 20:59:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 20:59:39 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 20:59:39 --> Total execution time: 0.0580
+DEBUG - 2017-08-26 22:03:53 --> UTF-8 Support Enabled
+DEBUG - 2017-08-26 22:03:53 --> No URI present. Default controller set.
+DEBUG - 2017-08-26 22:03:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-08-26 22:03:53 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-08-26 22:03:53 --> Total execution time: 0.0265

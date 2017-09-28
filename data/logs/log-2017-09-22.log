@@ -1,0 +1,56 @@
+DEBUG - 2017-09-22 06:06:02 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 06:06:02 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 06:06:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 06:06:02 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 06:06:02 --> Total execution time: 0.0266
+DEBUG - 2017-09-22 09:06:38 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 09:06:39 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 09:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 09:06:39 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 09:06:39 --> Total execution time: 1.3576
+DEBUG - 2017-09-22 13:24:25 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:25 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 13:24:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 13:24:25 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 13:24:25 --> Total execution time: 0.2441
+DEBUG - 2017-09-22 13:24:27 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:27 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 13:24:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 13:24:27 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 13:24:27 --> Total execution time: 0.0317
+DEBUG - 2017-09-22 13:24:29 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:29 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 13:24:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 13:24:29 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 13:24:29 --> Total execution time: 0.0304
+DEBUG - 2017-09-22 13:24:31 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:31 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 13:24:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 13:24:31 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 13:24:31 --> Total execution time: 0.0302
+DEBUG - 2017-09-22 13:24:32 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:32 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 13:24:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 13:24:32 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 13:24:32 --> Total execution time: 0.0285
+DEBUG - 2017-09-22 13:24:33 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 13:24:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-09-22 13:24:33 --> 404 Page Not Found: User/register
+DEBUG - 2017-09-22 18:57:25 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 18:57:25 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 18:57:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 18:57:25 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 18:57:25 --> Total execution time: 0.0511
+DEBUG - 2017-09-22 21:40:46 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 21:40:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-09-22 21:40:46 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-09-22 21:40:50 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 21:40:50 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 21:40:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 21:40:50 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 21:40:50 --> Total execution time: 0.0426
+DEBUG - 2017-09-22 21:49:21 --> UTF-8 Support Enabled
+DEBUG - 2017-09-22 21:49:21 --> No URI present. Default controller set.
+DEBUG - 2017-09-22 21:49:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-22 21:49:21 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-22 21:49:21 --> Total execution time: 0.0378

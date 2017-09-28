@@ -1,0 +1,28 @@
+DEBUG - 2017-09-02 02:31:10 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 02:31:10 --> No URI present. Default controller set.
+DEBUG - 2017-09-02 02:31:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-02 02:31:10 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-02 02:31:10 --> Total execution time: 0.0302
+DEBUG - 2017-09-02 03:45:01 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 03:45:01 --> No URI present. Default controller set.
+DEBUG - 2017-09-02 03:45:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-02 03:45:01 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-02 03:45:01 --> Total execution time: 0.0294
+DEBUG - 2017-09-02 11:36:10 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 11:36:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-09-02 11:36:10 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-09-02 11:36:13 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 11:36:13 --> No URI present. Default controller set.
+DEBUG - 2017-09-02 11:36:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-02 11:36:13 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-02 11:36:13 --> Total execution time: 0.0262
+DEBUG - 2017-09-02 19:49:30 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 19:49:30 --> No URI present. Default controller set.
+DEBUG - 2017-09-02 19:49:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-02 19:49:30 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-02 19:49:30 --> Total execution time: 0.0770
+DEBUG - 2017-09-02 21:06:52 --> UTF-8 Support Enabled
+DEBUG - 2017-09-02 21:06:52 --> No URI present. Default controller set.
+DEBUG - 2017-09-02 21:06:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-02 21:06:52 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-02 21:06:52 --> Total execution time: 0.0280

@@ -1,0 +1,23 @@
+DEBUG - 2017-09-08 02:39:56 --> UTF-8 Support Enabled
+DEBUG - 2017-09-08 02:39:56 --> No URI present. Default controller set.
+DEBUG - 2017-09-08 02:39:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-08 02:39:57 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-08 02:39:57 --> Total execution time: 0.0944
+DEBUG - 2017-09-08 08:55:37 --> UTF-8 Support Enabled
+DEBUG - 2017-09-08 08:55:38 --> No URI present. Default controller set.
+DEBUG - 2017-09-08 08:55:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-08 08:55:38 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-08 08:55:38 --> Total execution time: 0.3280
+DEBUG - 2017-09-08 08:55:44 --> UTF-8 Support Enabled
+DEBUG - 2017-09-08 08:55:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-09-08 08:55:44 --> 404 Page Not Found: Faviconico/index
+DEBUG - 2017-09-08 17:46:35 --> UTF-8 Support Enabled
+DEBUG - 2017-09-08 17:46:35 --> No URI present. Default controller set.
+DEBUG - 2017-09-08 17:46:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-08 17:46:35 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-08 17:46:35 --> Total execution time: 0.2173
+DEBUG - 2017-09-08 20:23:15 --> UTF-8 Support Enabled
+DEBUG - 2017-09-08 20:23:15 --> No URI present. Default controller set.
+DEBUG - 2017-09-08 20:23:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-08 20:23:15 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-08 20:23:15 --> Total execution time: 0.0291
