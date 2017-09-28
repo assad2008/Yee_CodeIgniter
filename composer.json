@@ -8,10 +8,12 @@
     "authors": [
         {
             "name": "Yee",
-            "email": "rlk002@gmail.com"
+            "email": "rlk002@gmail.com",
+            "homepage": "https://wj.pe"
         }
     ],
     "require": {
+    	"php": "^5.5 || ^7.0",
         "leeoniya/dump-r": "^2.1",
         "twig/twig": "^2.4"
     },
