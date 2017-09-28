@@ -1,4 +1,4 @@
-# My_CodeIgniter
+## My_CodeIgniter
 
 基于CodeIgniter3.1.6制作
  
@@ -10,4 +10,8 @@
 
 <http://ciend.xyz>
 
+
+## 安装项目
+
+`composer create-project assad2008/yeeslim3 --stability=dev project-name`
 
