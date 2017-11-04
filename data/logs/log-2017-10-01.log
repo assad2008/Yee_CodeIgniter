@@ -1,0 +1,21 @@
+DEBUG - 2017-10-01 07:06:05 --> UTF-8 Support Enabled
+DEBUG - 2017-10-01 07:06:05 --> No URI present. Default controller set.
+DEBUG - 2017-10-01 07:06:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-10-01 07:06:05 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-10-01 07:06:05 --> Total execution time: 0.0279
+DEBUG - 2017-10-01 11:40:58 --> UTF-8 Support Enabled
+DEBUG - 2017-10-01 11:40:58 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-10-01 11:40:58 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-10-01 13:51:29 --> UTF-8 Support Enabled
+DEBUG - 2017-10-01 13:51:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-10-01 13:51:29 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-10-01 13:51:32 --> UTF-8 Support Enabled
+DEBUG - 2017-10-01 13:51:32 --> No URI present. Default controller set.
+DEBUG - 2017-10-01 13:51:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-10-01 13:51:32 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-10-01 13:51:32 --> Total execution time: 0.0346
+DEBUG - 2017-10-01 22:06:33 --> UTF-8 Support Enabled
+DEBUG - 2017-10-01 22:06:33 --> No URI present. Default controller set.
+DEBUG - 2017-10-01 22:06:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-10-01 22:06:33 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-10-01 22:06:33 --> Total execution time: 0.0315

@@ -34,3 +34,26 @@ DEBUG - 2017-09-28 15:10:36 --> No URI present. Default controller set.
 DEBUG - 2017-09-28 15:10:36 --> Global POST, GET and COOKIE data sanitized
 DEBUG - 2017-09-28 15:10:36 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
 DEBUG - 2017-09-28 15:10:36 --> Total execution time: 0.0271
+DEBUG - 2017-09-28 19:46:30 --> UTF-8 Support Enabled
+DEBUG - 2017-09-28 19:46:30 --> No URI present. Default controller set.
+DEBUG - 2017-09-28 19:46:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-28 19:46:30 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-28 19:46:30 --> Total execution time: 0.0318
+DEBUG - 2017-09-28 21:06:25 --> UTF-8 Support Enabled
+DEBUG - 2017-09-28 21:06:25 --> No URI present. Default controller set.
+DEBUG - 2017-09-28 21:06:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-28 21:06:25 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-28 21:06:25 --> Total execution time: 0.0338
+DEBUG - 2017-09-28 23:24:04 --> UTF-8 Support Enabled
+DEBUG - 2017-09-28 23:24:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-09-28 23:24:04 --> 404 Page Not Found: Robotstxt/index
+DEBUG - 2017-09-28 23:24:04 --> UTF-8 Support Enabled
+DEBUG - 2017-09-28 23:24:04 --> No URI present. Default controller set.
+DEBUG - 2017-09-28 23:24:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-28 23:24:04 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-28 23:24:04 --> Total execution time: 0.0290
+DEBUG - 2017-09-28 23:24:24 --> UTF-8 Support Enabled
+DEBUG - 2017-09-28 23:24:24 --> No URI present. Default controller set.
+DEBUG - 2017-09-28 23:24:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-09-28 23:24:24 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
+DEBUG - 2017-09-28 23:24:24 --> Total execution time: 0.0283
