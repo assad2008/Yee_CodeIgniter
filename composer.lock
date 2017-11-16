@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e758070e779815694479ad01e260c08",
+    "content-hash": "a87cbc7b7f1410c1f42cecc8402bd6a3",
     "packages": [
         {
             "name": "leeoniya/dump-r",
@@ -192,7 +192,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^5.5 || ^7.0"
+        "php": "^5.4 || ^7.0"
     },
     "platform-dev": []
 }

@@ -1,8 +1,0 @@
-DEBUG - 2017-10-14 19:29:29 --> UTF-8 Support Enabled
-DEBUG - 2017-10-14 19:29:29 --> Global POST, GET and COOKIE data sanitized
-ERROR - 2017-10-14 19:29:29 --> 404 Page Not Found: Robotstxt/index
-DEBUG - 2017-10-14 19:29:29 --> UTF-8 Support Enabled
-DEBUG - 2017-10-14 19:29:29 --> No URI present. Default controller set.
-DEBUG - 2017-10-14 19:29:29 --> Global POST, GET and COOKIE data sanitized
-DEBUG - 2017-10-14 19:29:29 --> Config file loaded: /home/data/wwwroot/My_CodeIgniter/application/config/twig.php
-DEBUG - 2017-10-14 19:29:29 --> Total execution time: 0.1641
