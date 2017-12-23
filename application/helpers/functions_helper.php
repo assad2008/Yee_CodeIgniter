@@ -163,7 +163,7 @@ function ffile_get_contents($url)
     return $r;
 }
 
-function w_log($string, $t = 'day')
+function sendlog($string, $t = 'day')
 {
     if (is_array($string)) {
         $string = json_encode($string);
@@ -219,18 +219,6 @@ function mkdir_recursive($pathname, $mode)
 
     is_dir(dirname($pathname)) || mkdir_recursive(dirname($pathname), $mode);
     return is_dir($pathname) || @mkdir($pathname, $mode);
-}
-
-function create_guidq()
-{
-    $charid = md5(uniqid(mt_rand(), true));
-    $hyphen = chr(45);
-    $uuid = substr($charid, 0, 8) . $hyphen
-    . substr($charid, 8, 4) . $hyphen
-    . substr($charid, 12, 4) . $hyphen
-    . substr($charid, 16, 4) . $hyphen
-    . substr($charid, 20, 12);
-    return $uuid;
 }
 
 function get_charset()
@@ -292,7 +280,9 @@ function download_file($file, $filename = "")
         ob_clean();
         flush();
         readfile($file);
-        exit;
+        exit(0);
+    } else {
+        exit(0);
     }
 }
 
