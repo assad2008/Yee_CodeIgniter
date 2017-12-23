@@ -8,7 +8,7 @@
 
 访问：  
 
-<http://ciend.xyz>
+<http://ci.yeedev.xyz>
 
 
 ## 安装项目
