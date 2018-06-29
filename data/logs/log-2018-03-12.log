@@ -1,5 +1,0 @@
-DEBUG - 2018-03-12 16:03:59 --> UTF-8 Support Enabled
-DEBUG - 2018-03-12 16:03:59 --> No URI present. Default controller set.
-DEBUG - 2018-03-12 16:03:59 --> Global POST, GET and COOKIE data sanitized
-DEBUG - 2018-03-12 16:03:59 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
-DEBUG - 2018-03-12 16:03:59 --> Total execution time: 0.0484
