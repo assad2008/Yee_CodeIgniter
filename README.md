@@ -1,6 +1,6 @@
 ## My_CodeIgniter
 
-基于CodeIgniter3.1.8制作
+基于CodeIgniter3.1.9制作
  
 模板采用`Twig`模板引擎  
 
