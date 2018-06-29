@@ -1,0 +1,15 @@
+DEBUG - 2018-06-12 15:44:13 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 15:44:13 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 15:44:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2018-06-12 15:44:13 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'cnit'@'localhost' (using password: YES) /www/wwwroot/ci.yeedev.xyz/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2018-06-12 15:44:13 --> Unable to connect to the database
+DEBUG - 2018-06-12 15:46:09 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 15:46:09 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 15:46:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2018-06-12 15:46:09 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'cnit'@'localhost' (using password: YES) /www/wwwroot/ci.yeedev.xyz/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2018-06-12 15:46:09 --> Unable to connect to the database
+DEBUG - 2018-06-12 15:50:52 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 15:50:52 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 15:50:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-06-12 15:50:52 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-06-12 15:50:52 --> Total execution time: 0.1041
