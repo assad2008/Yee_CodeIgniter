@@ -9,4 +9,5 @@ return array(
     'dump_r\\' => array($vendorDir . '/leeoniya/dump-r/src/dump_r'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
 );

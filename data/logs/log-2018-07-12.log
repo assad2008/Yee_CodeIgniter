@@ -1,0 +1,15 @@
+DEBUG - 2018-07-12 04:13:17 --> UTF-8 Support Enabled
+DEBUG - 2018-07-12 04:13:17 --> No URI present. Default controller set.
+DEBUG - 2018-07-12 04:13:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-07-12 04:13:17 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-07-12 04:13:17 --> Total execution time: 0.0479
+DEBUG - 2018-07-12 15:29:44 --> UTF-8 Support Enabled
+DEBUG - 2018-07-12 15:29:44 --> No URI present. Default controller set.
+DEBUG - 2018-07-12 15:29:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-07-12 15:29:44 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-07-12 15:29:44 --> Total execution time: 0.0504
+DEBUG - 2018-07-12 23:14:35 --> UTF-8 Support Enabled
+DEBUG - 2018-07-12 23:14:35 --> No URI present. Default controller set.
+DEBUG - 2018-07-12 23:14:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-07-12 23:14:35 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-07-12 23:14:35 --> Total execution time: 0.0543
