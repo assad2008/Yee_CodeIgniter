@@ -1,0 +1,44 @@
+DEBUG - 2018-09-07 11:17:27 --> UTF-8 Support Enabled
+DEBUG - 2018-09-07 11:17:27 --> No URI present. Default controller set.
+DEBUG - 2018-09-07 11:17:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-09-07 11:17:28 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-09-07 11:17:28 --> Total execution time: 0.0681
+DEBUG - 2018-09-07 11:17:29 --> UTF-8 Support Enabled
+DEBUG - 2018-09-07 11:17:29 --> No URI present. Default controller set.
+DEBUG - 2018-09-07 11:17:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-09-07 11:17:29 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-09-07 11:17:29 --> Total execution time: 0.0032
+DEBUG - 2018-09-07 11:17:47 --> UTF-8 Support Enabled
+DEBUG - 2018-09-07 11:17:47 --> No URI present. Default controller set.
+DEBUG - 2018-09-07 11:17:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-09-07 11:17:47 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-09-07 11:17:47 --> Total execution time: 0.0039
+DEBUG - 2018-09-07 11:17:49 --> UTF-8 Support Enabled
+DEBUG - 2018-09-07 11:17:49 --> No URI present. Default controller set.
+DEBUG - 2018-09-07 11:17:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2018-09-07 11:17:49 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+DEBUG - 2018-09-07 11:17:49 --> Total execution time: 0.0036
+INFO - 2018-09-07 11:18:35 --> Config Class Initialized
+INFO - 2018-09-07 11:18:35 --> Hooks Class Initialized
+DEBUG - 2018-09-07 11:18:35 --> UTF-8 Support Enabled
+INFO - 2018-09-07 11:18:35 --> Utf8 Class Initialized
+INFO - 2018-09-07 11:18:35 --> URI Class Initialized
+DEBUG - 2018-09-07 11:18:35 --> No URI present. Default controller set.
+INFO - 2018-09-07 11:18:35 --> Router Class Initialized
+INFO - 2018-09-07 11:18:35 --> Output Class Initialized
+INFO - 2018-09-07 11:18:35 --> Security Class Initialized
+DEBUG - 2018-09-07 11:18:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-09-07 11:18:35 --> Input Class Initialized
+INFO - 2018-09-07 11:18:35 --> Language Class Initialized
+INFO - 2018-09-07 11:18:35 --> Loader Class Initialized
+INFO - 2018-09-07 11:18:35 --> Helper loaded: url_helper
+INFO - 2018-09-07 11:18:35 --> Helper loaded: functions_helper
+INFO - 2018-09-07 11:18:35 --> Session: Class initialized using 'files' driver.
+INFO - 2018-09-07 11:18:35 --> User Agent Class Initialized
+INFO - 2018-09-07 11:18:35 --> Model "Userm" initialized
+INFO - 2018-09-07 11:18:35 --> Controller Class Initialized
+INFO - 2018-09-07 11:18:35 --> Database Driver Class Initialized
+INFO - 2018-09-07 11:18:35 --> Helper loaded: file_helper
+DEBUG - 2018-09-07 11:18:35 --> Config file loaded: /www/wwwroot/ci.yeedev.xyz/application/config/twig.php
+INFO - 2018-09-07 11:18:35 --> Final output sent to browser
+DEBUG - 2018-09-07 11:18:35 --> Total execution time: 0.0044
