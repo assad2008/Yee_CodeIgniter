@@ -29,6 +29,8 @@ class __TwigTemplate_22f312904059fcb331262a7da20b8a423700e7675e1b6cee214c7119f2a
     ";
         // line 7
         echo twig_escape_filter($this->env, ($context["welcome"] ?? null), "html", null, true);
+        echo "，";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "post_title", array()), "html", null, true);
         echo "
     </body>
 </html>";
@@ -57,7 +59,7 @@ class __TwigTemplate_22f312904059fcb331262a7da20b8a423700e7675e1b6cee214c7119f2a
         <meta charset=\"utf-8\">
     </head>
     <body>
-    {{ welcome }}
+    {{ welcome }}，{{ post.post_title }}
     </body>
 </html>", "main.html", "/www/wwwroot/ci.yeedev.xyz/application/views/main.html");
     }

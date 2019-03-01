@@ -7,13 +7,11 @@
  * @Synopsis: 核心控制器
  * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2017-08-21 11:38:20
+ * @Last Modified time: 2018-09-07 16:55:40
  * @Email: rlk002@gmail.com
  */
 
-if (!defined('BASEPATH')) {
-    exit('No direct script access allowed');
-}
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class My_Controller extends CI_Controller
 {
@@ -83,7 +81,7 @@ class Unlogined_Controller extends My_Controller
     {
         parent::__construct();
         $this->loginstatus();
-        $this->view->assign("userinfo", $this->userinfo);
+        $this->userinfo && $this->view->assign("userinfo", $this->userinfo);
     }
 
     private function loginstatus()
@@ -106,7 +104,7 @@ class Logined_Controller extends My_Controller
     {
         parent::__construct();
         $this->_check_login();
-        $this->view->assign("userinfo", $this->userinfo);
+        $this->userinfo && $this->view->assign("userinfo", $this->userinfo);
     }
 
     private function _check_login()
