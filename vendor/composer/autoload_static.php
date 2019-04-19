@@ -48,6 +48,17 @@ class ComposerStaticInitf316fa36682f9738c646a9622b70eb9b
     );
 
     public static $prefixesPsr0 = array (
+        'Z' => 
+        array (
+            'Zend_Registry' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-registry/library',
+            ),
+            'Zend_Exception' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-exception/library',
+            ),
+        ),
         'T' => 
         array (
             'Twig_' => 

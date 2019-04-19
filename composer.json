@@ -15,7 +15,8 @@
     {
         "php": "^5.4 || ^7.0",
         "leeoniya/dump-r": "^2.1",
-        "twig/twig": "^2.4"
+        "twig/twig": "^2.4",
+        "zf1/zend-registry": "^1.12"
     },
     "autoload":
     {

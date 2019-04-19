@@ -243,5 +243,87 @@
         "keywords": [
             "templating"
         ]
+    },
+    {
+        "name": "zf1/zend-exception",
+        "version": "1.12.20",
+        "version_normalized": "1.12.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zf1/zend-exception.git",
+            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zf1/zend-exception/zipball/ca30959d3e2f522f481a3d1459386acf1aa4ca74",
+            "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.11"
+        },
+        "time": "2015-04-30T11:10:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend_Exception": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 1 Exception package",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "ZF1",
+            "exception",
+            "framework",
+            "zend"
+        ]
+    },
+    {
+        "name": "zf1/zend-registry",
+        "version": "1.12.20",
+        "version_normalized": "1.12.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zf1/zend-registry.git",
+            "reference": "1737419285b800728c27063318509fb2d00057ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zf1/zend-registry/zipball/1737419285b800728c27063318509fb2d00057ba",
+            "reference": "1737419285b800728c27063318509fb2d00057ba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.11",
+            "zf1/zend-exception": "self.version"
+        },
+        "suggest": {
+            "zf1/zend-loader": "Used in special situations or with special adapters"
+        },
+        "time": "2017-07-11T23:55:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend_Registry": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 1 Registry package",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "ZF1",
+            "framework",
+            "registry",
+            "zend"
+        ]
     }
 ]
