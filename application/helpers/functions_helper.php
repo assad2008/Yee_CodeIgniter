@@ -8,7 +8,7 @@
  * @Synopsis:  函数库
  * @Version:  1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 22:35:38
+ * @Last Modified time: 2019-11-11 22:49:41
  */
 
 /**
@@ -338,7 +338,7 @@ function getJsonData($data = [], $tip = 'success', $code = 0) {
 	$responseData['msg'] = $tip;
 	$responseData['data'] = $data;
 	$responseData['execute_time'] = (string) executeTime() . ' ms';
-	$ret = jsonOutput($responseData);
+	$ret = jsonEncode($responseData);
 	return $ret;
 }
 
@@ -714,8 +714,13 @@ function jump($uri = '', $method = 'auto', $code = NULL) {
  * @author     assad
  * @since      2019-09-26T18:03
  */
-function jsonOutput($array = []) {
-	return json_encode($array, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+function jsonEncode($array = [], $numberCheck = 0) {
+	if ($numberCheck) {
+		$jsonNumericCheck = JSON_NUMERIC_CHECK;
+	} else {
+		$jsonNumericCheck = 1;
+	}
+	return json_encode($array, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | $jsonNumericCheck);
 }
 
 /**
@@ -873,7 +878,7 @@ function multiArraySort($multi_array, $sort_key, $sort = SORT_DESC, $sort_key1 =
  */
 function outPutJson($data = [], $msg = 'success', $code = 0) {
 	$data = getResponseData($data, $msg, $code);
-	$jsonData = jsonOutput($data);
+	$jsonData = jsonEncode($data);
 	header("Content-type: application/json; charset=utf-8");
 	echo $jsonData;
 	exit(0);
@@ -1047,7 +1052,7 @@ function sendLog($string, $saveDir = 'sendlog', $t = 'day') {
 		return false;
 	}
 	if (is_array($string)) {
-		$string = jsonOutput($string);
+		$string = jsonEncode($string);
 	}
 	$timestamp = time();
 	if ($t == 'day') {

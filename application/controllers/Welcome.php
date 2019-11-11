@@ -7,7 +7,7 @@
  * @Synopsis: Welcome
  * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 22:29:29
+ * @Last Modified time: 2019-11-11 22:50:41
  * @Email: rlk002@gmail.com
  */
 
@@ -21,7 +21,7 @@ class Welcome extends Unlogined_Controller {
 	}
 
 	public function index() {
-		$post = $this->postsm->first(['ID' => 2]);
+		$post = $this->postsm->one(2);
 		$this->view->assign("post", $post);
 		$this->view->assign("welcome", "Welcome CodeIgniter");
 		$this->view->display("main.html");
