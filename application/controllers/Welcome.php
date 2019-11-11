@@ -7,25 +7,26 @@
  * @Synopsis: Welcome
  * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2018-09-07 16:54:23
+ * @Last Modified time: 2019-11-11 16:36:33
  * @Email: rlk002@gmail.com
  */
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends Unlogined_Controller
-{
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->model("postsm");
-    }
+class Welcome extends Unlogined_Controller {
 
-    public function index()
-    {
-        $post = $this->postsm->get_posts_by_id(2);
-        $this->view->assign("post", $post);
-        $this->view->assign("welcome", "Welcome CodeIgniter");
-        $this->view->display("main.html");
-    }
+	public function __construct() {
+		parent::__construct();
+		$this->load->model("postsm");
+	}
+
+	public function index() {
+		// debug($this->postsm->first(['post_name' => 'about']));
+		// // $this->postsm->update(2, ['post_type' => 'page']);
+		// debug($this->postsm->getMany(['post_status' => 'publish', 'ping_status' => 'open']));
+		$post = $this->postsm->one(2);
+		$this->view->assign("post", $post);
+		$this->view->assign("welcome", "Welcome CodeIgniter");
+		$this->view->display("main.html");
+	}
 }

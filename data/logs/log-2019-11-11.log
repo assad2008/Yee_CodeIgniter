@@ -1,0 +1,30 @@
+ERROR - 2019-11-11 12:10:10 --> Severity: Notice --> Undefined offset: 1 /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 333
+ERROR - 2019-11-11 12:10:10 --> Severity: Notice --> Undefined offset: 0 /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 336
+ERROR - 2019-11-11 12:10:10 --> Severity: Notice --> Undefined offset: 1 /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 336
+ERROR - 2019-11-11 12:10:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 - Invalid query: SELECT COUNT(*) AS `numrows`
+FROM `wp_posts`
+WHERE  IS NULL
+ERROR - 2019-11-11 12:19:33 --> Severity: error --> Exception: Cannot use object of type CI_DB_mysqli_driver as array /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 21
+ERROR - 2019-11-11 12:22:15 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:23:28 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:23:29 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:24:54 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:24:54 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 248
+ERROR - 2019-11-11 12:25:38 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:25:38 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 249
+ERROR - 2019-11-11 12:25:40 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:25:40 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 249
+ERROR - 2019-11-11 12:26:16 --> Severity: Notice --> Undefined property: Welcome::$dba /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:26:16 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:26:16 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 247
+ERROR - 2019-11-11 12:26:27 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:26:27 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 247
+ERROR - 2019-11-11 12:26:57 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:26:57 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 248
+ERROR - 2019-11-11 12:27:17 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:27:17 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 248
+ERROR - 2019-11-11 12:27:18 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:27:18 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 248
+ERROR - 2019-11-11 12:27:38 --> Severity: error --> Exception: Call to a member function query() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 248
+ERROR - 2019-11-11 12:29:02 --> Severity: Notice --> Undefined property: Welcome::$dataBase /www/wwwroot/ci.yeedev.xyz/system/core/Model.php 73
+ERROR - 2019-11-11 12:29:02 --> Severity: error --> Exception: Call to a member function where() on null /www/wwwroot/ci.yeedev.xyz/application/core/My_Model.php 356
