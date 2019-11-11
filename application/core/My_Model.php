@@ -4,15 +4,15 @@
  * @Author: assad
  * @Date:   2019-11-10 22:28:58
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 12:40:15
+ * @Last Modified time: 2019-11-11 22:31:51
  */
 
 class My_Model extends CI_Model {
 
 	protected $tableName;
-	protected $primaryKey = '';
+	protected $primaryKey = null;
 	protected $returnType = 'array';
-	public $dbConnect = null;
+	public $dbConnect;
 	public $timeStamp;
 
 	public function __construct() {
@@ -152,8 +152,8 @@ class My_Model extends CI_Model {
 	 * belongsto My_Model.php
 	 * 根据条件更新
 	 *
-	 * @param      array    $where  The where
-	 * @param      array    $data   The data
+	 * @param      array    $where  更新条件
+	 * @param      array    $data   要更新的数据
 	 *
 	 * @return     boolean  ( description_of_the_return_value )
 	 *
@@ -173,7 +173,7 @@ class My_Model extends CI_Model {
 	 * belongsto My_Model.php
 	 * 根据主键删除记录
 	 *
-	 * @param      <type>   $id     The identifier
+	 * @param      integer   $id     主键值
 	 *
 	 * @return     boolean  ( description_of_the_return_value )
 	 *
@@ -194,7 +194,7 @@ class My_Model extends CI_Model {
 	 * belongsto My_Model.php
 	 * 统计数目
 	 *
-	 * @return     <type>  ( description_of_the_return_value )
+	 * @return     integer  返回统计的数量
 	 *
 	 * @author     assad
 	 * @since      2019-11-11T12:11
@@ -245,6 +245,8 @@ class My_Model extends CI_Model {
 	private function _fetchPrimaryKey() {
 		if ($this->primaryKey == NULl) {
 			$this->primaryKey = $this->getDb()->query("SHOW KEYS FROM `" . $this->tableName . "` WHERE Key_name = 'PRIMARY'")->row()->Column_name;
+		} else {
+			$this->primaryKey = 'id';
 		}
 	}
 

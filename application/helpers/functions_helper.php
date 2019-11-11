@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @Filename:  functions_helper.php
  * @Author:  assad
@@ -7,7 +8,7 @@
  * @Synopsis:  函数库
  * @Version:  1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 17:47:13
+ * @Last Modified time: 2019-11-11 22:35:38
  */
 
 /**
@@ -1051,11 +1052,11 @@ function sendLog($string, $saveDir = 'sendlog', $t = 'day') {
 	$timestamp = time();
 	if ($t == 'day') {
 		$f = date('Ymd', $timestamp);
-		$filename = FCPATH . 'data/logs/' . $saveDir . '/' . $f . '.log';
+		$fileName = FCPATH . 'data/logs/' . $saveDir . '/' . $f . '.log';
 	}
 	$logTime = date('Y/m/d H:i:s', $timestamp);
 	$record = $logTime . ' - ' . $string . "\n";
-	writeLog($filename, $record, 'ab');
+	writeLog($fileName, $record, 'ab');
 }
 
 /**
@@ -1092,49 +1093,49 @@ function urlencode4js($string) {
 /**
  * 写日志内容到文件
  *
- * @param      integer   $file_name  写入文件路径
+ * @param      integer   $fileName  写入文件路径
  * @param      integer   $data       内容
  * @param      string   $method     打开文件方法
- * @param      integer  $iflock     是否加锁
+ * @param      integer  $ifLock     是否加锁
  * @param      integer  $check      The check
  * @param      integer  $chmod      The chmod
  *
- * @return     boolean  ( description_of_the_return_value )
+ * @return     boolean
  */
-function writeLog($file_name, $data, $method = 'wb+', $iflock = 1, $check = 1, $chmod = 1) {
-	if (empty($file_name)) {
+function writeLog($fileName, $data, $method = 'wb+', $ifLock = 1, $check = 1, $chmod = 1) {
+	if (!$fileName) {
 		return false;
 	}
 
-	if ($check && strpos($file_name, '..') !== false) {
+	if ($check && strpos($fileName, '..') !== false) {
 		return false;
 	}
 
-	if (!is_dir(dirname($file_name)) && !rMkdir(dirname($file_name), 0777)) {
+	if (!is_dir(dirname($fileName)) && !rMkdir(dirname($fileName), 0777)) {
 		return false;
 	}
 
-	$ret = writeFile($file_name, $data, $method, $iflock, $chmod);
+	$ret = writeFile($fileName, $data, $method, $ifLock, $chmod);
 	return $ret;
 }
 
 /**
  * 写文件
  *
- * @param      string   $file_path  文件路径
+ * @param      string   $filePath  文件路径
  * @param      string   $data       要写入的内容
  * @param      string   $method     打开文件方法
- * @param      integer  $iflock     是否加锁
+ * @param      integer  $ifLock     是否加锁
  * @param      integer  $chmod      权限
  *
- * @return     boolean  ( description_of_the_return_value )
+ * @return     boolean
  */
-function writeFile($file_path, $data, $method = 'wb+', $iflock = 1, $chmod = 1) {
-	if (($handle = fopen($file_path, $method)) == false) {
+function writeFile($filePath, $data, $method = 'wb+', $ifLock = 1, $chmod = 1) {
+	if (($handle = fopen($filePath, $method)) == false) {
 		return false;
 	}
 
-	if ($iflock) {
+	if ($ifLock) {
 		flock($handle, LOCK_EX);
 	}
 
@@ -1146,7 +1147,7 @@ function writeFile($file_path, $data, $method = 'wb+', $iflock = 1, $chmod = 1) 
 		ftruncate($handle, strlen($data));
 	}
 
-	if ($iflock) {
+	if ($ifLock) {
 		flock($handle, LOCK_UN);
 	}
 
