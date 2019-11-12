@@ -8,8 +8,10 @@
  * @Synopsis:  函数库
  * @Version:  1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 22:49:41
+ * @Last Modified time: 2019-11-12 18:26:03
  */
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * 截取字符串函数
@@ -236,12 +238,12 @@ function debug($var = null, $type = 2) {
  * @param      string  $file      本地文件地址
  * @param      string  $filename  下载的文件名称
  */
-function downloadFile($file, $filename = "") {
-	$down_file_name = $filename ?: basename($file);
+function downloadFile($file, $fileName = "") {
+	$downFileName = $fileName ?: basename($file);
 	if (file_exists($file)) {
 		header('Content-Description: File Transfer');
 		header('Content-Type: application/octet-stream');
-		header('Content-Disposition: attachment; filename=' . $down_file_name);
+		header('Content-Disposition: attachment; filename=' . $downFileName);
 		header('Content-Transfer-Encoding: binary');
 		header('Expires: 0');
 		header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
@@ -497,7 +499,7 @@ function getRemoteFileSize($url) //远程获取文件长度
  *
  * @return     string  The url.
  */
-function getCurrentUrl() {
+function getCurrentPageUrl() {
 	$sys_protocal = isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443' ? 'https://' : 'http://';
 	$php_self = $_SERVER['PHP_SELF'] ? safeReplace($_SERVER['PHP_SELF']) : safeReplace($_SERVER['SCRIPT_NAME']);
 	$path_info = isset($_SERVER['PATH_INFO']) ? safeReplace($_SERVER['PATH_INFO']) : '';
@@ -1034,8 +1036,8 @@ function strToInt($string) {
  * @return     string  得到安全的URL
  */
 function scUrlEncode($url) {
-	static $fix = array('%21', '%2A', '%3B', '%3A', '%40', '%26', '%3D', '%2B', '%24', '%2C', '%2F', '%3F', '%25', '%23', '%5B', '%5D');
-	static $replacements = array('!', '*', ';', ":", "@", "&", "=", "+", "$", ",", "/", "?", "%", "#", "[", "]");
+	static $fix = ['%21', '%2A', '%3B', '%3A', '%40', '%26', '%3D', '%2B', '%24', '%2C', '%2F', '%3F', '%25', '%23', '%5B', '%5D'];
+	static $replacements = ['!', '*', ';', ":", "@", "&", "=", "+", "$", ",", "/", "?", "%", "#", "[", "]"];
 	return str_replace($fix, $replacements, urlencode($url));
 }
 

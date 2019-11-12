@@ -4,19 +4,23 @@
  * @Author: assad
  * @Date:   2019-11-10 22:28:58
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-11 22:31:51
+ * @Last Modified time: 2019-11-12 18:20:52
  */
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class My_Model extends CI_Model {
 
 	protected $tableName;
 	protected $primaryKey = null;
 	protected $returnType = 'array';
-	public $dbConnect;
+	protected $dataBase;
+	protected $dbConnect;
 	public $timeStamp;
 
 	public function __construct() {
 		parent::__construct();
+		$this->getDbConnect();
+		$this->fetchPrimaryKey();
 		$this->timeStamp = time();
 	}
 
@@ -35,7 +39,6 @@ class My_Model extends CI_Model {
 		if (!$id) {
 			return false;
 		}
-		$this->_fetchPrimaryKey();
 		return $this->_getBy($this->primaryKey, $id);
 	}
 
@@ -69,7 +72,7 @@ class My_Model extends CI_Model {
 	protected function _getBy() {
 		$where = func_get_args();
 		$this->_setWhere($where);
-		$row = $this->getDb()->get($this->tableName)
+		$row = $this->dataBase->get($this->tableName)
 			->{$this->_returnType()}();
 		return $row;
 	}
@@ -99,7 +102,7 @@ class My_Model extends CI_Model {
 	 * @since      2019-11-11T11:52
 	 */
 	protected function _getAll() {
-		$result = $this->getDb()->get($this->tableName)
+		$result = $this->dataBase->get($this->tableName)
 			->{$this->_returnType(1)}();
 		return $result;
 	}
@@ -119,8 +122,8 @@ class My_Model extends CI_Model {
 		if (!$data) {
 			return false;
 		}
-		$this->getDb()->insert($this->tableName, $data);
-		$insertId = $this->getDb()->insert_id();
+		$this->dataBase->insert($this->tableName, $data);
+		$insertId = $this->dataBase->insert_id();
 		if ($insertId) {
 			return $insertId;
 		} else {
@@ -142,8 +145,7 @@ class My_Model extends CI_Model {
 		if (!$data) {
 			return false;
 		}
-		$this->_fetchPrimaryKey();
-		$result = $this->getDb()->where($this->primaryKey, $id)
+		$result = $this->dataBase->where($this->primaryKey, $id)
 			->set($data)->update($this->tableName);
 		return $result;
 	}
@@ -165,7 +167,7 @@ class My_Model extends CI_Model {
 			return false;
 		}
 		$this->_setWhere($where);
-		$result = $this->getDb()->set($data)->update($this->tableName);
+		$result = $this->dataBase->set($data)->update($this->tableName);
 		return $result;
 	}
 
@@ -184,9 +186,8 @@ class My_Model extends CI_Model {
 		if (!$id) {
 			return false;
 		}
-		$this->_fetchPrimaryKey();
-		$this->getDb()->where($this->primaryKey, $id);
-		$result = $this->getDb()->delete($this->tableName);
+		$this->dataBase->where($this->primaryKey, $id);
+		$result = $this->dataBase->delete($this->tableName);
 		return $result;
 	}
 
@@ -202,7 +203,7 @@ class My_Model extends CI_Model {
 	public function count() {
 		$where = func_get_args();
 		$where && $this->_setWhere($where);
-		return $this->getDb()->count_all_results($this->tableName);
+		return $this->dataBase->count_all_results($this->tableName);
 	}
 
 	/**
@@ -215,7 +216,7 @@ class My_Model extends CI_Model {
 	 * @since      2019-11-11T12:07
 	 */
 	public function truncate() {
-		$result = $this->getDb()->truncate($this->tableName);
+		$result = $this->dataBase->truncate($this->tableName);
 		return $result;
 	}
 
@@ -229,10 +230,10 @@ class My_Model extends CI_Model {
 	 * @since      2019-11-11T12:14
 	 */
 	public function getNextId() {
-		return (int) $this->getDb()->select('AUTO_INCREMENT')
+		return (int) $this->dataBase->select('AUTO_INCREMENT')
 			->from('information_schema.TABLES')
 			->where('TABLE_NAME', $this->tableName)
-			->where('TABLE_SCHEMA', $this->getDb()->database)->get()->row()->AUTO_INCREMENT;
+			->where('TABLE_SCHEMA', $this->dataBase->database)->get()->row()->AUTO_INCREMENT;
 	}
 
 	/**
@@ -242,11 +243,9 @@ class My_Model extends CI_Model {
 	 * @author     assad
 	 * @since      2019-11-11T11:54
 	 */
-	private function _fetchPrimaryKey() {
+	private function fetchPrimaryKey() {
 		if ($this->primaryKey == NULl) {
-			$this->primaryKey = $this->getDb()->query("SHOW KEYS FROM `" . $this->tableName . "` WHERE Key_name = 'PRIMARY'")->row()->Column_name;
-		} else {
-			$this->primaryKey = 'id';
+			$this->primaryKey = $this->dataBase->query("SHOW KEYS FROM `" . $this->tableName . "` WHERE Key_name = 'PRIMARY'")->row()->Column_name;
 		}
 	}
 
@@ -272,8 +271,14 @@ class My_Model extends CI_Model {
 	 * @author     assad
 	 * @since      2019-11-11T12:33
 	 */
-	protected function getDb() {
-		return $this->dbConnect ?: $this->db;
+	private function getDbConnect() {
+		if (isset($this->dbConnect)) {
+			$this->dataBase = $this->load->database($this->dbConnect, TRUE);
+		} else {
+			$this->load->database();
+			$this->dataBase = $this->db;
+		}
+		return $this;
 	}
 
 	/**
@@ -309,30 +314,30 @@ class My_Model extends CI_Model {
 		if (count($params) == 1 && is_array($params[0])) {
 			foreach ($params[0] as $field => $filter) {
 				if (is_array($filter)) {
-					$this->getDb()->where_in($field, $filter);
+					$this->dataBase->where_in($field, $filter);
 				} else {
 					if (is_int($field)) {
-						$this->getDb()->where($filter);
+						$this->dataBase->where($filter);
 					} else {
-						$this->getDb()->where($field, $filter);
+						$this->dataBase->where($field, $filter);
 					}
 				}
 			}
 		} else if (count($params) == 1) {
-			$this->getDb()->where($params[0]);
+			$this->dataBase->where($params[0]);
 		} else if (count($params) == 2) {
 			if (is_array($params[1])) {
-				$this->getDb()->where_in($params[0], $params[1]);
+				$this->dataBase->where_in($params[0], $params[1]);
 			} else {
-				$this->getDb()->where($params[0], $params[1]);
+				$this->dataBase->where($params[0], $params[1]);
 			}
 		} else if (count($params) == 3) {
-			$this->getDb()->where($params[0], $params[1], $params[2]);
+			$this->dataBase->where($params[0], $params[1], $params[2]);
 		} else {
 			if (is_array($params[1])) {
-				$this->getDb()->where_in($params[0], $params[1]);
+				$this->dataBase->where_in($params[0], $params[1]);
 			} else {
-				$this->getDb()->where($params[0], $params[1]);
+				$this->dataBase->where($params[0], $params[1]);
 			}
 		}
 	}
@@ -349,13 +354,13 @@ class My_Model extends CI_Model {
 	 * @author     assad
 	 * @since      2019-11-11T11:56
 	 */
-	public function order_by($column, $order = 'ASC') {
+	public function orderBy($column, $order = 'ASC') {
 		if (is_array($column)) {
 			foreach ($column as $key => $value) {
-				$this->getDb()->order_by($key, $value);
+				$this->dataBase->order_by($key, $value);
 			}
 		} else {
-			$this->getDb()->order_by($column, $order);
+			$this->dataBase->order_by($column, $order);
 		}
 		return $this;
 	}
@@ -373,7 +378,7 @@ class My_Model extends CI_Model {
 	 * @since      2019-11-11T11:56
 	 */
 	public function limit($limit, $offset = 0) {
-		$this->getDb()->limit($limit, $offset);
+		$this->dataBase->limit($limit, $offset);
 		return $this;
 	}
 }

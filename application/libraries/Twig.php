@@ -1,83 +1,73 @@
 <?php
 
-class Twig
-{
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-    protected $loader;
-    protected $twig;
-    protected $variables = array();
+class Twig {
 
-    public function __construct($params)
-    {
-        $templateDir = $params["view"];
-        $options = $params["options"];
-        $this->loader = new Twig_Loader_Filesystem($templateDir);
-        $this->twig = new Twig_Environment($this->loader, $options);
-    }
+	protected $loader;
+	protected $twig;
+	protected $variables = array();
 
-    public function __isset($name)
-    {
-        return isset($this->variables[$name]);
-    }
+	public function __construct($params) {
+		$templateDir = $params["view"];
+		$options = $params["options"];
+		$this->loader = new Twig_Loader_Filesystem($templateDir);
+		$this->twig = new Twig_Environment($this->loader, $options);
+	}
 
-    public function __set($name, $value)
-    {
-        $this->variables[$name] = $value;
-    }
+	public function __isset($name) {
+		return isset($this->variables[$name]);
+	}
 
-    public function __get($name)
-    {
-        return $this->variables[$name];
-    }
+	public function __set($name, $value) {
+		$this->variables[$name] = $value;
+	}
 
-    public function __unset($name)
-    {
-        unset($this->variables[$name]);
-    }
+	public function __get($name) {
+		return $this->variables[$name];
+	}
 
-    public function getTwig()
-    {
-        return $this->twig;
-    }
+	public function __unset($name) {
+		unset($this->variables[$name]);
+	}
 
-    public function assign($name, $value = null)
-    {
-        if (is_array($name)) {
-            foreach ($name as $k => $v) {
-                $this->variables[$k] = $v;
-            }
-        } else {
-            $this->variables[$name] = $value;
-        }
-    }
+	public function getTwig() {
+		return $this->twig;
+	}
 
-    public function display($template, $variables = null)
-    {
-        echo $this->render($template, $variables);
-    }
+	public function assign($name, $value = null) {
+		if (is_array($name)) {
+			foreach ($name as $k => $v) {
+				$this->variables[$k] = $v;
+			}
+		} else {
+			$this->variables[$name] = $value;
+		}
+	}
 
-    public function fetch($template, $variables = null)
-    {
-        return $this->render($template, $variables);
-    }
+	public function display($template, $variables = null) {
+		echo $this->render($template, $variables);
+		exit(0);
+	}
 
-    public function getScriptPath()
-    {
-        $paths = $this->loader->getPaths();
-        return reset($paths);
-    }
+	public function fetch($template, $variables = null) {
+		return $this->render($template, $variables);
+	}
 
-    public function render($template, $variables = null)
-    {
-        if (is_array($variables)) {
-            $this->variables = array_merge($this->variables, $variables);
-        }
+	public function getScriptPath() {
+		$paths = $this->loader->getPaths();
+		return reset($paths);
+	}
 
-        return $this->twig->loadTemplate($template)->render($this->variables);
-    }
+	public function render($template, $variables = null) {
+		if (is_array($variables)) {
+			$this->variables = array_merge($this->variables, $variables);
+		}
 
-    public function setScriptPath($templateDir)
-    {
-        $this->loader->setPaths($templateDir);
-    }
+		return $this->twig->loadTemplate($template)->render($this->variables);
+	}
+
+	public function setScriptPath($templateDir) {
+		$this->loader->setPaths($templateDir);
+	}
 }
