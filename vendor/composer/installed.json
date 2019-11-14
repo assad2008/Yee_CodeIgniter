@@ -12,7 +12,13 @@
             "type": "zip",
             "url": "https://api.github.com/repos/leeoniya/dump_r.php/zipball/f6d3694f4ddd7dc08d7b3900875116eaf600034d",
             "reference": "f6d3694f4ddd7dc08d7b3900875116eaf600034d",
-            "shasum": ""
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.4.0"
@@ -67,7 +73,13 @@
             "type": "zip",
             "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
             "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
-            "shasum": ""
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.3.3"
@@ -127,7 +139,13 @@
             "type": "zip",
             "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
             "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
-            "shasum": ""
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.3.3"
@@ -177,18 +195,24 @@
     },
     {
         "name": "twig/twig",
-        "version": "v2.12.1",
-        "version_normalized": "2.12.1.0",
+        "version": "v2.12.2",
+        "version_normalized": "2.12.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5"
+            "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
-            "reference": "ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
-            "shasum": ""
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
+            "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": "^7.0",
@@ -200,7 +224,7 @@
             "symfony/debug": "^3.4|^4.2",
             "symfony/phpunit-bridge": "^4.4@dev|^5.0"
         },
-        "time": "2019-10-17T07:34:53+00:00",
+        "time": "2019-11-11T16:52:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -216,7 +240,7 @@
                 "Twig\\": "src/"
             }
         },
-        "notification-url": "https://packagist.jp/downloads/",
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "BSD-3-Clause"
         ],
@@ -257,7 +281,13 @@
             "type": "zip",
             "url": "https://api.github.com/repos/zf1/zend-exception/zipball/ca30959d3e2f522f481a3d1459386acf1aa4ca74",
             "reference": "ca30959d3e2f522f481a3d1459386acf1aa4ca74",
-            "shasum": ""
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.2.11"
@@ -296,7 +326,13 @@
             "type": "zip",
             "url": "https://api.github.com/repos/zf1/zend-registry/zipball/1737419285b800728c27063318509fb2d00057ba",
             "reference": "1737419285b800728c27063318509fb2d00057ba",
-            "shasum": ""
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
         },
         "require": {
             "php": ">=5.2.11",

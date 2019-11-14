@@ -8,7 +8,7 @@
  * @Synopsis:  函数库
  * @Version:  1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-12 18:26:03
+ * @Last Modified time: 2019-11-14 14:49:28
  */
 
 defined('BASEPATH') or exit('No direct script access allowed');
@@ -1005,6 +1005,92 @@ function randomDecimals($min, $max, $decimals = 2) {
 
 /**
  * belongsto functions_helper.php
+ * 字符串反序列化
+ *
+ * @param      string   $str    The string
+ * @param      array    $array  The array
+ * @param      integer  $i      { parameter_description }
+ *
+ * @return     array    ( description_of_the_return_value )
+ *
+ * @author     assad
+ * @since      2019-11-12T23:36
+ */
+function Runserialize($str, $array = array(), $i = 1) {
+	$str = explode("\n$i\n", $str);
+	foreach ($str as $key => $value) {
+		$k = substr($value, 0, strpos($value, "\t"));
+		$v = substr($value, strpos($value, "\t") + 1);
+		if (strpos($v, "\n") !== false) {
+			$next = $i + 1;
+			$array[$k] = Runserialize($v, $array[$k], $next);
+		} elseif (strpos($v, "\t") !== false) {
+			$array[$k] = Rarray($array[$k], $v);
+		} else {
+			$array[$k] = $v;
+		}
+	}
+	return $array;
+}
+
+/**
+ * belongsto functions_helper.php
+ * 序列化数组
+ *
+ * @param      array   $array   The array
+ * @param      string  $string  The string
+ *
+ * @return     array   ( description_of_the_return_value )
+ *
+ * @author     assad
+ * @since      2019-11-12T23:37
+ */
+function Rarray($array, $string) {
+	$k = substr($string, 0, strpos($string, "\t"));
+	$v = substr($string, strpos($string, "\t") + 1);
+	if (strpos($v, "\t") !== false) {
+		$array[$k] = Rarray($array[$k], $v);
+	} else {
+		$array[$k] = $v;
+	}
+	return $array;
+}
+
+/**
+ * belongsto functions_helper.php
+ * 数组序列化
+ *
+ * @param      array    $array  The array
+ * @param      string   $ret    The ret
+ * @param      integer  $i      { parameter_description }
+ *
+ * @return     string   ( description_of_the_return_value )
+ *
+ * @author     assad
+ * @since      2019-11-12T23:38
+ */
+function Rserialize($array, $ret = '', $i = 1) {
+	if (!is_array($array)) {
+		return null;
+	}
+	foreach ($array as $k => $v) {
+		if (is_array($v)) {
+			$next = $i + 1;
+			$ret .= "$k\t";
+			$ret = Rserialize($v, $ret, $next);
+			$ret .= "\n$i\n";
+		} else {
+			$ret .= "$k\t$v\n$i\n";
+		}
+	}
+	if (substr($ret, -3) == "\n$i\n") {
+		$ret = substr($ret, 0, -3);
+	}
+	return $ret;
+}
+
+/**
+ * belongsto functions_helper.php
  * 字符串转数字
  *
  * @param      string   $string  待转字符串
@@ -1098,6 +1184,52 @@ function urlencode4js($string) {
 }
 
 /**
+ * belongsto functions_helper.php
+ * IP地址校验
+ *
+ * @param      string  $ip     IP地址
+ *
+ * @return     boolean          ( description_of_the_return_value )
+ *
+ * @author     assad
+ * @since      2019-11-12T23:38
+ */
+function validIp($ip) {
+	if (strtolower($ip) === 'unknown') {
+		return false;
+	}
+	$ip = ip2long($ip);
+	if ($ip !== false && $ip !== -1) {
+		$ip = sprintf('%u', $ip);
+		if ($ip >= 0 && $ip <= 50331647) {
+			return false;
+		}
+		if ($ip >= 167772160 && $ip <= 184549375) {
+			return false;
+		}
+		if ($ip >= 2130706432 && $ip <= 2147483647) {
+			return false;
+		}
+		if ($ip >= 2851995648 && $ip <= 2852061183) {
+			return false;
+		}
+		if ($ip >= 2886729728 && $ip <= 2887778303) {
+			return false;
+		}
+		if ($ip >= 3221225984 && $ip <= 3221226239) {
+			return false;
+		}
+		if ($ip >= 3232235520 && $ip <= 3232301055) {
+			return false;
+		}
+		if ($ip >= 4294967040) {
+			return false;
+		}
+	}
+	return true;
+}
+
+/**
  * 写日志内容到文件
  *
  * @param      integer   $fileName  写入文件路径
@@ -1161,4 +1293,42 @@ function writeFile($filePath, $data, $method = 'wb+', $ifLock = 1, $chmod = 1) {
 	fclose($handle);
 	$chmod && @chmod($filename, 0777);
 	return true;
+}
+
+/**
+ * belongsto functions_helper.php
+ * Zend 存储
+ *
+ * @param      string   $key    The key
+ * @param      all      $value  The value
+ *
+ * @return     boolean  ( description_of_the_return_value )
+ *
+ * @author     assad
+ * @since      2019-11-14T14:47
+ */
+function zset($key, $value) {
+	if (!$key) {
+		return false;
+	}
+	\Zend_Registry::set($key, $value);
+}
+
+/**
+ * belongsto functions_helper.php
+ * Zend存储
+ *
+ * @param      string   $key    The key
+ *
+ * @return     all
+ *
+ * @author     assad
+ * @since      2019-11-14T14:49
+ */
+function zget($key) {
+	if (!$key) {
+		return false;
+	}
+	$getVal = \Zend_Registry::get($key);
+	return $getVal ?: '';
 }

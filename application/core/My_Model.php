@@ -1,21 +1,28 @@
 <?php
 
 /**
+ * @Filename: My_Controller.php
  * @Author: assad
  * @Date:   2019-11-10 22:28:58
+ * @Synopsis: 核心Model
+ * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-12 18:20:52
+ * @Last Modified time: 2019-11-14 22:47:41
+ * @Email: rlk002@gmail.com
  */
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class My_Model extends CI_Model {
 
-	protected $tableName;
-	protected $primaryKey = null;
-	protected $returnType = 'array';
-	protected $dataBase;
-	protected $dbConnect;
 	public $timeStamp;
+
+	protected $tableName;
+	protected $primaryKey = 'id';
+	protected $returnType = 'array';
+	protected $dbConnect = 'default';
+
+	private $dataBase;
 
 	public function __construct() {
 		parent::__construct();
@@ -152,7 +159,7 @@ class My_Model extends CI_Model {
 
 	/**
 	 * belongsto My_Model.php
-	 * 根据条件更新
+	 * 根据条件更新记录
 	 *
 	 * @param      array    $where  更新条件
 	 * @param      array    $data   要更新的数据
@@ -187,6 +194,26 @@ class My_Model extends CI_Model {
 			return false;
 		}
 		$this->dataBase->where($this->primaryKey, $id);
+		$result = $this->dataBase->delete($this->tableName);
+		return $result;
+	}
+
+	/**
+	 * belongsto My_Model.php
+	 * 根据条件删除记录
+	 *
+	 * @param      array    $where  更新条件
+	 *
+	 * @return     boolean  ( description_of_the_return_value )
+	 *
+	 * @author     assad
+	 * @since      2019-11-14T22:47
+	 */
+	public function deleteBy($where = []) {
+		if (!$where) {
+			return false;
+		}
+		$this->_setWhere($where);
 		$result = $this->dataBase->delete($this->tableName);
 		return $result;
 	}
@@ -272,7 +299,7 @@ class My_Model extends CI_Model {
 	 * @since      2019-11-11T12:33
 	 */
 	private function getDbConnect() {
-		if (isset($this->dbConnect)) {
+		if (isset($this->dbConnect) && $this->dbConnect) {
 			$this->dataBase = $this->load->database($this->dbConnect, TRUE);
 		} else {
 			$this->load->database();
