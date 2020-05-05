@@ -7,7 +7,7 @@
  * @Synopsis: Welcome
  * @Version: 1.0
  * @Last Modified by:   assad
- * @Last Modified time: 2019-11-14 14:50:55
+ * @Last Modified time: 2019-12-17 18:19:35
  * @Email: rlk002@gmail.com
  */
 
@@ -23,7 +23,7 @@ class Welcome extends Unlogined_Controller {
 	public function index() {
 		$post = $this->postsm->one(2);
 		$this->view->assign("post", $post);
-		$this->view->assign("welcome", "Welcome CodeIgniter");
+		$this->view->assign("welcome", "Welcome Yee CI");
 		$this->view->display("main.html");
 	}
 }
